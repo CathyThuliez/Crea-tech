@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Modification de base sur la page  */
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  text-align: center;
+  margin-top: 0;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #722375;
+}
+
+/* HEADER */
+/* Mettre à la bonne taille le logo dans le Header */
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; /* Assure que le Header reste au-dessus du contenu */
+  opacity: 0.6; /* Opacité 0.6 */
+  transition: 1.5s;
+}
+
+.logo {
+  width: 10rem;
+  height: auto;
+}
+
+/* Mise en place de la navBar */
+.navBar {
+  height: 5rem;
+  background-image: url(./images/BG_HEAD_FOOT/studio-background.jpg);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  /* créer un espace égal entre chaques éléments */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navBar a {
+  color: white;
+}
+
+.navBar .Nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.navBar .Nav-links ul li {
+  margin: 0 25px;
+}
+
+.navBar .Nav-links ul li.active a {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+  font-style: oblique;
+}
+
+.number_Header {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.contact_Header {
+  margin-top: 6px;
+  padding-right: 15px;
+}
+
+/* ACCUEIL */
+.accueil {
+  background-image: url(./images/BG_ACCUEIL/15634900_5660676.jpg);
+  background-size: cover;
+  height: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Logo_accueil{
+  width: 20rem;
+  height: auto;
+
+}
+
+.paragraphe {
+  color: black;
+  width: 60%;
+  /* Ceci permet de mettre sur le coté une div, on lui dit de prendre 45% de la taille de l'écran*/
+  text-align: justify;
+}
+
+#btn1 {
+  box-shadow: -0.5em 0.5em 0.4em #000;
+}
+
+.btn {
+  border: none;
+  border-radius: 7px;
+  box-shadow: -0.5em 0.5em 0.4em #7b7575;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #eeeeee;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #722375;;
+  padding: 15px 50px;
+  margin: 0 auto;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 470%;
+  width: 140%;
+  background: #d756c6;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+  transform: translateX(-100%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: rotate(39deg);
+  transform: translateX(-7%) translateY(-28.5%) rotate(39deg);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+/* SERVICES */
+/* Style de la page services */
+
+.service-image{
+  text-align: center;
+}
+
+.services{
+  padding: 5px;
+  background-color: #7223757c;
+  border-radius: 7px;
+  box-shadow: -0.5em 0.5em 0.4em #722375b6;
+}
+
+.services:hover {
+  scale: 1.1;
+  background-color: #929292;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+/* A PROPOS */
+/* Style de la page a propos */
+section {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.paragrapheAbout {
+  margin-top: 3.1rem;
+  width: 45%;
+  text-align: justify;
+}
+
+.listAbout {
+  width: 38%;
+  margin-right: 0;
+}
+
+.check-logo {
+  float: left;
+  width: 1.4rem;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* Style de la section "ils nous ont fais confiance */
+
+#projects-title {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.projets-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+}
+
+.project-image {
+  border-radius: 7px;
+  box-shadow: -0.5em 0.5em 0.4em #7b7575;
+}
+
+.project-image:hover {
+  scale: 1.1;
+  background-color: #7b7575;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+#img1,
+#img2,
+#img3 {
+  width: 15rem;
+  height: auto;
+}
+
+#img4,
+#img5,
+#img6 {
+  width: 20rem;
+  height: auto;
+}
+
+#img1 {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+#img2 {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+#img3 {
+  grid-column: 3 / 4;
+  grid-row: 1;
+}
+
+#img4 {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  margin-top: 20rem;
+  margin-left: 10rem;
+}
+
+#img5 {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  margin-top: -2rem;
+  margin-left: 10rem;
+}
+
+#img6 {
+  grid-column: 3 / 4;
+  grid-row: 1;
+  margin-top: 20rem;
+  margin-left: -7rem;
+}
+
+/* FOOTER  */
+/* Style de base pour le footer */
+footer {
+  background-image: url(./images/BG_HEAD_FOOT/studio-background.jpg);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style et disposition pour le footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  /* Créer un espace égale entre chaque élément */
+  align-items: center;
+  flex-wrap: wrap;
+  /* Permet aux éléments de passer à la ligne si l'espace est insuffisant */
+}
+
+/* Permet d'obtenir le bloc du milieu du footer */
+.footer-legal-mention {
+  display: block;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* Styles pour les icônes de médias sociaux à droite */
+.footer-social-media {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles pour les icônes de médias sociaux */
+img {
+  width: 1.9rem;
+  height: auto;
+  margin-left: 10px;
+  /* Espacement entre les icônes */
+}
+
+/* Nouvelle taille logo facebook */
+.facebook-logo {
+  width: 1.438rem;
+  margin-right: 5px;
+  /* Espacement entre les icônes */
+}
+
+/* Ajouter un hover pour les icônes de médias sociaux */
+.footer-social-media img:hover {
+  opacity: 0.7;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  opacity: 0.7;
+  color: rgb(131, 37, 131);
+  transition: 0.3s;
+}
