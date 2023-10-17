@@ -84,7 +84,7 @@ h3 {
 .accueil {
   background-image: url(./images/BG_ACCUEIL/15634900_5660676.jpg);
   background-size: cover;
-  height: 35rem;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -221,6 +221,7 @@ h3 {
   align-items: center;
   background-color: #f8f8f8;
   border: 1px solid #ddd;
+  border-radius: 25%;
   box-shadow: -0.5em 0.5em 0.4em #7b7575;
   padding: 0.625rem;
   margin-top: 1.25rem;
