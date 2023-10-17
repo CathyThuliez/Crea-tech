@@ -26,6 +26,7 @@ const Service = ({ image, title, description }) => {
       <div className="service-content">
         <img src={image} alt={title} />
         <h3>{title}</h3>
+        <p>En savoir plus.</p>
       </div>
       {isHovered && (
         <div className="service-description">
