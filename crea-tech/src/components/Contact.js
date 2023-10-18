@@ -1,91 +1,61 @@
-import React from 'react';
-import { useForm, Controller } from 'react-hook-form';
+import React from 'react'
+import Tel from '../images/ICON_CONTACT/icons8-tel-58.png'
+import Position from '../images/ICON_CONTACT/icons8-commande-livrée-100.png'
+import Mail from '../images/ICON_CONTACT/icons8-courrier-96.png'
 
 const Contact = () => {
-  const { handleSubmit, control, errors } = useForm();
-
-  const onSubmit = (data) => {
-    console.log(data);
-    // Envoyez les données du formulaire à votre serveur ou effectuez d'autres actions ici.
-  };
-
   return (
-    <div>
-      <h2>Contactez-nous</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <label htmlFor="nom">Nom</label>
-          <Controller
-            name="nom"
-            control={control}
-            defaultValue=""
-            rules={{ required: 'Le nom est requis' }}
-            render={({ field }) => <input {...field} />}
-          />
-          {errors.nom && <p>{errors.nom.message}</p>}
+    <section id="contact" class="contact">
+      <div className='contact-title'>
+        <h2>Contact</h2>
+        <div className='text-contact'>
+          <p>Vous avez un <b>site à réaliser ?</b></p>
+          <p><b>Une question</b>, ou tout simplement besoin d'un renseignement ?</p>
+          <p><b>N'hésitez pas et contactez-nous.</b> </p>
+        </div>
+      </div>
+      <div className='content'>
+        <div className='contact-info'>
+          <ul>
+            <img src={Position} alt="" className='icon-contact' /><li> Nous rencontrer</li><br />
+            <img src={Mail} alt="" className='icon-contact' /><li> Nous écrire</li><br />
+            <img src={Tel} alt="" className='icon-contact' /><li> Nous appeler</li><br />
+          </ul>
         </div>
 
-        <div>
-          <label htmlFor="prenom">Prénom</label>
-          <Controller
-            name="prenom"
-            control={control}
-            defaultValue=""
-            rules={{ required: 'Le prénom est requis' }}
-            render={({ field }) => <input {...field} />}
+        <div className='contact-form'>
+          <input
+            className="form-name"
+            id="name"
+            name="name"
+            placeholder='Nom et Prénom'
+            type="text"
           />
-          {errors.prenom && <p>{errors.prenom.message}</p>}
-        </div>
-
-        <div>
-          <label htmlFor="email">Email</label>
-          <Controller
+          <input
+            className="form-eamil"
+            id="email"
             name="email"
-            control={control}
-            defaultValue=""
-            rules={{
-              required: 'L\'adresse e-mail est requise',
-              pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                message: 'Adresse e-mail invalide',
-              },
-            }}
-            render={({ field }) => <input {...field} />}
+            placeholder='Email'
+            type="email"
+            required
           />
-          {errors.email && <p>{errors.email.message}</p>}
-        </div>
-
-        <div>
-          <label htmlFor="sujet">Sujet</label>
-          <Controller
+          <input
+            className="form-sujet"
+            id="sujet"
             name="sujet"
-            control={control}
-            defaultValue=""
-            render={({ field }) => (
-              <select {...field}>
-                <option value="">-- Sélectionnez un sujet --</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="autre">Autre</option>
-              </select>
-            )}
+            placeholder='Sujet'
+            type="Sujet"
           />
+          <textarea className='form-message'
+            id="message"
+            name="message"
+            placeholder='Message'
+            rows='3'>
+          </textarea>
+          <button className='btn' type='submit'> <span>Envoyer la demande </span></button>
         </div>
-
-        <div>
-          <label htmlFor="commentaire">Commentaire</label>
-          <Controller
-            name="commentaire"
-            control={control}
-            defaultValue=""
-            render={({ field }) => <textarea {...field} />}
-          />
-        </div>
-
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
-  );
-};
-
-export default Contact;
+      </div>
+    </section>
+  )
+}
+export default Contact
