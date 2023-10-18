@@ -18,7 +18,9 @@ h3 {
   text-align: center;
   color: #722375;
 }
-
+b{
+  color: #722375;
+}
 /* HEADER */
 /* Mettre à la bonne taille le logo dans le Header */
 
@@ -246,7 +248,7 @@ h3 {
 
 /* A PROPOS */
 /* Style de la page a propos */
-section {
+section.about {
   height: 100dvh;
   width: auto;
   padding: 60px 0;
@@ -267,7 +269,7 @@ section {
 }
 
 .listAbout {
-  width: 38%;
+  width: 40%;
   margin-right: 0;
 }
 
@@ -278,6 +280,7 @@ section {
   margin-right: 10px;
 }
 
+/* AVIS */
 /* Style de la section "ils nous ont fais confiance */
 
 #projects-title {
@@ -356,6 +359,46 @@ section {
   margin-top: 20rem;
   margin-left: -7rem;
 }
+
+/* CONTACT
+/* Style de base pour la page contact */
+
+section.contact{
+  padding-top: 3rem;
+  height: 100dvh;
+  width: auto;
+}
+
+.text-contact{
+  padding-top: 2rem;
+  font-size: large;
+  margin-left: 50rem;
+  width: 20rem;
+}
+
+.contact-form input, textarea{
+  font-size: x-large;
+  display: flex;
+  width: 30rem;
+  margin-bottom: 2rem;
+  /* border-top: none;
+  border-left: none;
+  border-right: none; */
+  border-color: #722375;
+  border-style:dotted;
+  border-radius: 10px;
+}
+
+.icon-contact{
+    float: left;
+    width: 2.5rem;
+    margin-right: 1.2rem;
+}
+
+.contact-info{
+  font-size: x-large;
+  width: 20rem;
+} 
 
 /* FOOTER  */
 /* Style de base pour le footer */
