@@ -106,13 +106,13 @@ b{
 }
 
 #btn1 {
-  box-shadow: -0.5em 0.5em 0.4em #000;
+  box-shadow: -0.5em 0.5em 0.4em black;
 }
 
 .btn {
   border: none;
   border-radius: 7px;
-  box-shadow: -0.5em 0.5em 0.4em #7b7575;
+  box-shadow: -0.5em 0.5em 0.4em black;
   display: block;
   text-align: center;
   cursor: pointer;
@@ -135,7 +135,7 @@ b{
   top: 0;
   height: 470%;
   width: 140%;
-  background: #d756c6;
+  background: pink;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
@@ -153,7 +153,7 @@ b{
 }
 
 .btn a:hover {
-  color: #fff;
+  color: black;
   opacity: 1;
 }
 
@@ -224,10 +224,10 @@ b{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  background-color: #722375;
+  border: 1px solid #722375;
   border-radius: 25%;
-  box-shadow: -0.5em 0.5em 0.4em #7b7575;
+  box-shadow: -0.5em 0.5em 0.4em pink;
   padding: 0.625rem;
   margin-top: 1.25rem;
   position: absolute;
@@ -242,6 +242,7 @@ b{
 }
 
 .service:hover .service-description {
+  color: pink;
   opacity: 1;
   visibility: visible;
 }
@@ -370,10 +371,10 @@ section.contact{
 }
 
 .text-contact{
+  margin: auto;
   padding-top: 2rem;
-  font-size: large;
-  margin-left: 50rem;
-  width: 20rem;
+  font-size: x-large;
+  width: 30rem;
 }
 
 .contact-form input, textarea{
@@ -388,17 +389,73 @@ section.contact{
   border-style:dotted;
   border-radius: 10px;
 }
-
-.icon-contact{
-    float: left;
-    width: 2.5rem;
-    margin-right: 1.2rem;
+/* PAGE INFO */
+/* style de la page section info qui est dans la page Contact */
+.contacts-page {
+  text-align: center;
 }
 
-.contact-info{
-  font-size: x-large;
-  width: 20rem;
-} 
+.contact-info {
+  padding: 0.7rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s;
+}
+
+.contact-info:hover {
+  transform: translateX(0.625rem);
+}
+
+.contact-content {
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-contact{
+  margin-right: 1.5rem;
+}
+
+/* .contact-row {
+  width: auto;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 0.625rem;
+  flex-direction: row;
+} */
+
+.contact-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #722375;
+  border: 1px solid pink;
+  border-radius: 10px;
+  box-shadow: -0.5em 0.5em 0.4em pink;
+  padding: 0.625rem;
+  margin-top: 3rem;
+  position: absolute;
+  top: 3rem;
+  left: 100%;
+  transform: translateY(-100%);
+  width: 15rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.contact:hover .contact-description {
+  justify-content: center;
+  color: pink;
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* FOOTER  */
 /* Style de base pour le footer */
