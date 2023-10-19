@@ -30,7 +30,7 @@ const Service = ({ image, title, description }) => {
       </div>
       {isHovered && (
         <div className="service-description">
-          <h3>{title}</h3>
+          <h4>{title}</h4>
           <p>{description}</p>
         </div>
       )}
@@ -73,7 +73,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="services-page">
+    <div className="services-page" id="services">
       <h2>Nos Services</h2>
       <div className="services">
         <div className="service-row">

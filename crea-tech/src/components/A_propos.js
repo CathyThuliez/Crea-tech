@@ -15,7 +15,7 @@ class A_propos extends Component {
                         <div class="paragrapheAbout">
                             <p>Chez Créa-tech, nous créons des sites Internet pour les professionnels, quel que soit le secteur d’activité.</p>
                             <p> Notre priorité est de comprendre les besoins de nos clients, les aider à les exprimer si nécessaire, et à mettre en oeuvre les solutions les plus adaptées
-                                qui permettront d’atteindre les objectifs fixés.</p>
+                                qui permettront d'atteindre les objectifs fixés.</p>
                             <p>Nous nous donnons pour mission de vous aider à tirer le meilleur parti de la puissance du numérique, en la combinant à la qualité de la relation humaine.</p>
 
                         </div>
@@ -30,7 +30,7 @@ class A_propos extends Component {
                                 <img src={Check} alt="" className='check-logo'/><li> Nous vous préparons un devis</li><br />
                                 <img src={Check} alt="" className='check-logo'/><li>S'il vous convient, nous commençons à créer votre site</li><br />
                             </ul>
-                           <button className="btn"> <a href="#"><span>Créons ensemble votre site web</span></a></button>
+                           <button className="btn"> <a href="#contact"><span>Créons ensemble votre site web</span></a></button>
                         </div>
                     </div>
 

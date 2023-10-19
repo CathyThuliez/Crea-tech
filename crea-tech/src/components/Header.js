@@ -34,7 +34,7 @@ const Header = () => {
               <a href="#accueil">Accueil</a>
             </li>
             <li>
-              <a href="#services-title">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
               <a href="#about">A propos</a>
@@ -43,7 +43,7 @@ const Header = () => {
               <a href="#projects-title">Avis</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <div className="contact_Header">
               <a href="#">
