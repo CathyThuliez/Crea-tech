@@ -19,7 +19,6 @@ const Contact = () => {
             name="nom"
             control={control}
             defaultValue=""
-            rules={{ required: 'Le nom est requis' }}
             render={({ field }) => <input {...field} />}
           />
           {errors.nom && <p>{errors.nom.message}</p>}
@@ -31,7 +30,6 @@ const Contact = () => {
             name="prenom"
             control={control}
             defaultValue=""
-            rules={{ required: 'Le prénom est requis' }}
             render={({ field }) => <input {...field} />}
           />
           {errors.prenom && <p>{errors.prenom.message}</p>}
@@ -43,13 +41,6 @@ const Contact = () => {
             name="email"
             control={control}
             defaultValue=""
-            rules={{
-              required: 'L\'adresse e-mail est requise',
-              pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                message: 'Adresse e-mail invalide',
-              },
-            }}
             render={({ field }) => <input {...field} />}
           />
           {errors.email && <p>{errors.email.message}</p>}

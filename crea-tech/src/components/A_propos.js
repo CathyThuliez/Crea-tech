@@ -4,22 +4,22 @@ import Check from '../images/apple-touch-icon.png'
 class A_propos extends Component {
     render() {
         return (
-            <section id="about" class="about">
-                <div class="container">
+            <section id="about" className="about">
+                <div className="container">
 
-                    <div class="section-title">
+                    <div className="section-title">
                         <h2>Qui sommes-nous ?</h2>
                     </div>
 
-                    <div class="content">
-                        <div class="paragrapheAbout">
+                    <div className="content">
+                        <div className="paragrapheAbout">
                             <p>Chez Créa-tech, nous créons des sites Internet pour les professionnels, quel que soit le secteur d’activité.</p>
                             <p> Notre priorité est de comprendre les besoins de nos clients, les aider à les exprimer si nécessaire, et à mettre en oeuvre les solutions les plus adaptées
                                 qui permettront d’atteindre les objectifs fixés.</p>
                             <p>Nous nous donnons pour mission de vous aider à tirer le meilleur parti de la puissance du numérique, en la combinant à la qualité de la relation humaine.</p>
 
                         </div>
-                        <div class="listAbout">
+                        <div className="listAbout">
                             <h3>
                                 Concrètement, comment ça se passe ?
                             </h3>
