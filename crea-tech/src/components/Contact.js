@@ -1,20 +1,26 @@
-import React from 'react'
-import Info from './Info'
+import React from "react";
+import Info from "./Info";
 
 const Contact = () => {
   return (
     <section id="contact" class="contact">
-      <div className='contact-title'>
+      <div className="contact-title">
         <h2>Contact</h2>
-        <div className='text-contact'>
-          <p>Vous avez un <b>site à réaliser ?</b></p>
-          <p><b>Une question</b>, ou tout simplement besoin d'un renseignement ?</p>
-          <p><b>N'hésitez pas et contactez-nous.</b> </p>
+        <div className="text-contact">
+          <p>
+            Vous avez un <b>site à réaliser ?</b>
+          </p>
+          <p>
+            <b>Une question</b>, ou tout simplement besoin d'un renseignement ?
+          </p>
+          <p>
+            <b>N'hésitez pas et contactez-nous.</b>{" "}
+          </p>
         </div>
       </div>
-      <div className='content'>
-        <div>
-          <Info />
+      <div className="content">
+        <div className="contact-info">
+          <Info /> 
         </div>
 
         <form className='contact-form'>
@@ -22,7 +28,7 @@ const Contact = () => {
             className="form-name"
             id="name"
             name="name"
-            placeholder='Nom et Prénom'
+            placeholder="Nom et Prénom"
             type="text"
             required
           />
@@ -30,7 +36,9 @@ const Contact = () => {
             className="form-eamil"
             id="email"
             name="email"
-            placeholder='Email'
+            defaultValue=""
+            render={({ field }) => <input {...field} />}
+            placeholder="Email"
             type="email"
             required
           />
@@ -55,6 +63,6 @@ const Contact = () => {
         </form>
       </div>
     </section>
-  )
-}
-export default Contact
+  );
+};
+export default Contact;
