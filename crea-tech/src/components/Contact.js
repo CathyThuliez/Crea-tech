@@ -42,6 +42,9 @@ const Contact = () => {
             type="text"
             required
           />
+
+
+
           < textarea className='form-message'
             id="message"
             name="message"
