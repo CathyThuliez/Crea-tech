@@ -18,7 +18,7 @@ h3 {
   text-align: center;
   color: #722375;
 }
-b{
+b {
   color: #722375;
 }
 /* HEADER */
@@ -165,6 +165,7 @@ b{
   width: auto;
   text-align: center;
   padding-top: 10rem;
+  margin-bottom: 9.375rem;
 }
 
 .service-header {
@@ -213,7 +214,7 @@ b{
   flex-direction: row;
   margin-top: 18.75rem;
   margin-bottom: 4.688rem;
-  margin-left: -81.875rem;
+  margin-left: -85rem;
 }
 
 .service-content h3 {
@@ -364,29 +365,29 @@ section.about {
 /* CONTACT
 /* Style de base pour la page contact */
 
-section.contact{
+section.contact {
   padding-top: 3rem;
   height: 100dvh;
   width: auto;
 }
 
-.text-contact{
+.text-contact {
   margin: auto;
   padding-top: 2rem;
   font-size: x-large;
   width: 30rem;
+  margin-left: 2.813rem;
+  margin-top: -2.813rem;
 }
 
-.contact-form input, textarea{
+.contact-form input,
+textarea {
   font-size: x-large;
   display: flex;
   width: 30rem;
   margin-bottom: 2rem;
-  /* border-top: none;
-  border-left: none;
-  border-right: none; */
   border-color: #722375;
-  border-style:dotted;
+  border-style: dotted;
   border-radius: 10px;
 }
 /* PAGE INFO */
@@ -401,6 +402,7 @@ section.contact{
   margin-left: auto;
   margin-right: auto;
   transition: transform 0.3s;
+  margin-left: 0.625rem;
 }
 
 .contact-info:hover {
@@ -414,19 +416,9 @@ section.contact{
   align-items: center;
 }
 
-.logo-contact{
+.logo-contact {
   margin-right: 1.5rem;
 }
-
-/* .contact-row {
-  width: auto;
-  height: 3.125rem;
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  margin: 0.625rem;
-  flex-direction: row;
-} */
 
 .contact-description {
   display: flex;
@@ -455,7 +447,6 @@ section.contact{
   opacity: 1;
   visibility: visible;
 }
-
 
 /* FOOTER  */
 /* Style de base pour le footer */
@@ -514,7 +505,7 @@ a {
 }
 
 a:hover {
-  opacity: 0,7;
+  opacity: 0, 7;
   color: pink;
   transition: 0.3s;
 }

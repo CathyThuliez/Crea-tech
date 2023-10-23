@@ -1,56 +1,43 @@
-import React from 'react'
-import Info from './Info'
-import { Controller } from 'react-hook-form'
+import React from "react";
+import Info from "./Info";
+import { Controller } from "react-hook-form";
 
 const Contact = () => {
   return (
     <section id="contact" class="contact">
-      <div className='contact-title'>
+      <div className="contact-title">
         <h2>Contact</h2>
-        <div className='text-contact'>
-          <p>Vous avez un <b>site à réaliser ?</b></p>
-          <p><b>Une question</b>, ou tout simplement besoin d'un renseignement ?</p>
-          <p><b>N'hésitez pas et contactez-nous.</b> </p>
+        <div className="text-contact">
+          <p>
+            Vous avez un <b>site à réaliser ?</b>
+          </p>
+          <p>
+            <b>Une question</b>, ou tout simplement besoin d'un renseignement ?
+          </p>
+          <p>
+            <b>N'hésitez pas et contactez-nous.</b>{" "}
+          </p>
         </div>
       </div>
-      <div className='content'>
-        <div>
-          <label htmlFor="nom">Nom</label>
-          <Controller
-            name="nom"
-            control={control}
-            defaultValue=""
-            render={({ field }) => <input {...field} />}
-          />
-          {errors.nom && <p>{errors.nom.message}</p>}
+      <div className="content">
+        <div className="contact-info">
+          <Info /> 
         </div>
-
-        <div>
-          <label htmlFor="prenom">Prénom</label>
-          <Controller
-            name="prenom"
-            control={control}
-            defaultValue=""
-            render={({ field }) => <input {...field} />}
-          <Controller />
-        </div>
-
-        <div className='contact-form'>
+        <div className="contact-form">
           <input
             className="form-name"
             id="name"
             name="name"
-            placeholder='Nom et Prénom'
+            placeholder="Nom et Prénom"
             type="text"
           />
           <input
             className="form-eamil"
             id="email"
             name="email"
-            control={control}
             defaultValue=""
             render={({ field }) => <input {...field} />}
-            placeholder='Email'
+            placeholder="Email"
             type="email"
             required
           />
@@ -58,19 +45,24 @@ const Contact = () => {
             className="form-sujet"
             id="sujet"
             name="sujet"
-            placeholder='Sujet'
+            placeholder="Sujet"
             type="Sujet"
           />
-          <textarea className='form-message'
+          <textarea
+            className="form-message"
             id="message"
             name="message"
-            placeholder='Message'
-            rows='3'>
-          </textarea>
-          <button className='btn' type='submit'><a href="#"><span>Envoyer la demande </span></a></button>
+            placeholder="Message"
+            rows="3"
+          ></textarea>
+          <button className="btn" type="submit">
+            <a href="#">
+              <span>Envoyer la demande </span>
+            </a>
+          </button>
         </div>
       </div>
     </section>
-  )
-}
-export default Contact
+  );
+};
+export default Contact;
