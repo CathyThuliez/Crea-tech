@@ -376,16 +376,16 @@ section.contact {
 
 .text-contact {
   margin: auto;
-  padding-top: 2rem;
+  padding-top: 8rem;
   font-size: x-large;
   width: 30rem;
-  margin-left: 5rem;
+  margin-left: 15rem;
   margin-top: -3rem;
 }
 
 .contact-form {
-  margin-top: -18rem;
-  margin-right: 2rem;
+  margin-top: -15rem;
+  margin-right: 20rem;
 }
 
 .contact-form input,
@@ -395,9 +395,10 @@ textarea {
   width: 30rem;
   margin-bottom: 1.5rem;
   border-color: #722375;
-  border-style: dotted;
+  border-style: double;
   border-radius: 10px;
 }
+
 /* PAGE INFO */
 /* style de la page section info qui est dans la page Contact */
 .contacts-page {
@@ -405,13 +406,13 @@ textarea {
 }
 
 .contact-info {
+  font-size: large;
   padding: 0.7rem;
   text-align: center;
-  margin-left: auto;
   margin-right: auto;
   transition: transform 0.3s;
   margin-top: -1.6rem;
-  margin-left: 3rem;
+  margin-left: 9rem;
 }
 
 .contact-info:hover {
@@ -420,7 +421,7 @@ textarea {
 }
 
 .contact-content {
-  width: 15rem;
+  width: 18rem;
   display: flex;
   flex-direction: row;
   align-items: center;
