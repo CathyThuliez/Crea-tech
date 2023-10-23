@@ -17,13 +17,14 @@ const Contact = () => {
           <Info />
         </div>
 
-        <div className='contact-form'>
+        <form className='contact-form'>
           <input
             className="form-name"
             id="name"
             name="name"
             placeholder='Nom et Prénom'
             type="text"
+            required
           />
           <input
             className="form-eamil"
@@ -38,16 +39,17 @@ const Contact = () => {
             id="sujet"
             name="sujet"
             placeholder='Sujet'
-            type="Sujet"
+            type="text"
+            required
           />
-          <textarea className='form-message'
+          < textarea className='form-message'
             id="message"
             name="message"
             placeholder='Message'
-            rows='3'>
-          </textarea>
+            rows='3'
+          />
           <button className='btn' type='submit'><a href="#"><span>Envoyer la demande </span></a></button>
-        </div>
+        </form>
       </div>
     </section>
   )
