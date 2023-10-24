@@ -367,7 +367,7 @@ section.about {
 /* Style de base pour la page contact */
 
 section.contact {
-  padding-top: 1rem;
+  margin-top: 10rem;
   height: 100dvh;
   width: auto;
   margin-bottom: 10rem;
