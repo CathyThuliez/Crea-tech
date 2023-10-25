@@ -417,12 +417,13 @@ section.contact {
 }
 
 .contact-form {
-  margin-top: -15rem;
-  margin-right: 20rem;
+  margin-top: -25rem;
+  margin-right: 8rem;
 }
 
 .contact-form input,
-textarea {
+textarea,
+select {
   font-size: x-large;
   display: flex;
   width: 30rem;
@@ -430,6 +431,11 @@ textarea {
   border-color: #722375;
   border-style: double;
   border-radius: 10px;
+}
+
+label {
+  color: #722375;
+  font-weight: bold;
 }
 
 /* PAGE INFO */
