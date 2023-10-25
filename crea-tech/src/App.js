@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Projets from "./components/Projets";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Avis from "./components/Avis";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Accueil />
       <Services />
+      <Avis />
       <A_propos />
       <Projets />
       <Contact />
