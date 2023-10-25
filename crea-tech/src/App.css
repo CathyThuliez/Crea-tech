@@ -39,6 +39,39 @@ b {
   height: auto;
 }
 
+/* effet sur la navbar */
+.navBar {
+  color: white; /* Couleur du texte par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Transition de couleur de fond */
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navBar .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Styles pour le logo et autres éléments de la navbar */
+.logo {
+  max-width: 100px; /* Largeur du logo */
+}
+
+.contact_Header {
+  color: white;
+}
+
 /* Mise en place de la navBar */
 .navBar {
   height: 5rem;

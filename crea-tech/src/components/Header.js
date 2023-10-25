@@ -3,9 +3,21 @@ import Logo from "../images/Logo_Crea_Tech/logo_blanc.png";
 
 const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+  const [activeSection, setActiveSection] = useState("accueil");
 
   useEffect(() => {
     const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          setActiveSection(section.getAttribute("id"));
+        }
+      });
+
       if (window.scrollY > 0) {
         setIsHeaderFixed(true);
       } else {
@@ -30,19 +42,19 @@ const Header = () => {
         </a>
         <div className="Nav-links">
           <ul>
-            <li className="active">
+            <li className={activeSection === "accueil" ? "active" : ""}>
               <a href="#accueil">Accueil</a>
             </li>
-            <li>
+            <li className={activeSection === "services" ? "active" : ""}>
               <a href="#services">Services</a>
             </li>
-            <li>
-              <a href="#about">A propos</a>
+            <li className={activeSection === "about" ? "active" : ""}>
+              <a href="#about">À Propos</a>
             </li>
-            <li>
+            <li className={activeSection === "projects-title" ? "active" : ""}>
               <a href="#projects-title">Avis</a>
             </li>
-            <li>
+            <li className={activeSection === "contact" ? "active" : ""}>
               <a href="#contact">Contact</a>
             </li>
             <div className="contact_Header">

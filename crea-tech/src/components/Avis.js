@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   CarouselProvider,
   Slider,
@@ -6,26 +6,26 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
 
-class Avis extends Component {
-  render() {
-    return (
-      <CarouselProvider
-        naturalSlideWidth={10}
-        naturalSlideHeight={10}
-        totalSlides={3}
-      >
-        <Slider>
-          <Slide index={0}>I am the first Slide.</Slide>
-          <Slide index={1}>I am the second Slide.</Slide>
-          <Slide index={2}>I am the third Slide.</Slide>
-        </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
-      </CarouselProvider>
-    );
-  }
-}
+const Avis = () => {
+  return (
+    <CarouselProvider
+      naturalSlideWidth={2}
+      naturalSlideHeight={2}
+      totalSlides={6}
+    >
+      <Slider>
+        <Slide index={0}>Avis 1</Slide>
+        <Slide index={1}>Avis 2</Slide>
+        <Slide index={2}>Avis 3</Slide>
+        <Slide index={3}>Avis 4</Slide>
+        <Slide index={4}>Avis 5</Slide>
+        <Slide index={5}>Avis 6</Slide>
+      </Slider>
+      <ButtonBack>Précédent</ButtonBack>
+      <ButtonNext>Suivant</ButtonNext>
+    </CarouselProvider>
+  );
+};
 
 export default Avis;

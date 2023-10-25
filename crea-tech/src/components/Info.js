@@ -53,7 +53,7 @@ const Contacts = () => {
   ];
 
   return (
-    <div className='contacts-page' id="contacts">
+    <section className='contacts-page' id="contacts">
       <div className='contacts'>
         <div className='contact-row'>
           {contactData.slice(0, 3).map((contact, index) => (
@@ -66,7 +66,7 @@ const Contacts = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
