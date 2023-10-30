@@ -1,31 +1,20 @@
-import React from "react";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-const Avis = () => {
-  return (
-    <CarouselProvider
-      naturalSlideWidth={2}
-      naturalSlideHeight={2}
-      totalSlides={6}
-    >
-      <Slider>
-        <Slide index={0}>Avis 1</Slide>
-        <Slide index={1}>Avis 2</Slide>
-        <Slide index={2}>Avis 3</Slide>
-        <Slide index={3}>Avis 4</Slide>
-        <Slide index={4}>Avis 5</Slide>
-        <Slide index={5}>Avis 6</Slide>
-      </Slider>
-      <ButtonBack>Précédent</ButtonBack>
-      <ButtonNext>Suivant</ButtonNext>
-    </CarouselProvider>
-  );
+const Carousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0)
 };
 
-export default Avis;
+const handleNext = () => {
+  setCurrentIndex((prevIndex) =>
+    prevIndex + 1 === images.length ? 0 : prevIndex + 1
+  );
+};
+const handlePrevious = () => {
+  setCurrentIndex((prevIndex) =>
+    prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+  );
+};
+const handleDotClick = (index) => {
+  setCurrentIndex(index);
+};
