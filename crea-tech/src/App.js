@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Accueil />
       <Services />
-      <Avis />
       <A_propos />
+      <Avis />
       <Projets />
       <Contact />
       <Footer />
