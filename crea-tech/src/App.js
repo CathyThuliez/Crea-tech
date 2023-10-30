@@ -19,6 +19,7 @@ function App() {
       <A_propos />
       <Avis />
       <Projets />
+      <Avis />
       <Contact />
       <Footer />
     </div>
