@@ -5,7 +5,7 @@ class Accueil extends Component {
     render() {
         return (
             <Fragment>
-                <div className="accueil" id="accueil">
+                <section className="accueil" id="accueil">
                     <div className="paragraphe">
                         <img src={Logo2} alt="logo" className="Logo_accueil"/><br />
                         <q>
@@ -18,7 +18,7 @@ class Accueil extends Component {
                             <a href="#contact"><span>Une idée de site ? Parlez-en ici</span></a>
                         </button>
                     </div>
-                </div>
+                </section>
             </Fragment>
         );
     }

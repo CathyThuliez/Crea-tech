@@ -48,7 +48,6 @@ const Contact = () => {
             id="sujet"
             name="sujet"
             placeholder='Sujet'
-            type="text"
             required
           />
 
