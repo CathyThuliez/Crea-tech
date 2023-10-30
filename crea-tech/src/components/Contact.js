@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Info from "./Info";
 
@@ -77,6 +78,7 @@ const Contact = () => {
               <option value={"wordpress"}>Wordpress</option>
               <option value={"formation"}>Formation</option>
               <option value={"website"}>Création de site</option>
+              <option value={"Autre"}>Autre (préciser dans le message)</option>
             </select>
           </label>
 

@@ -58,7 +58,7 @@ const Header = () => {
               <a href="#contact">Contact</a>
             </li>
             <div className="contact_Header">
-              <a href="#">
+              <a href="contact">
                 contact@crea-tech.fr{" "}
                 <p className="number_Header">06 42 14 03 29</p>
               </a>

@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/jsx-pascal-case */
 import "./App.css";
 import A_propos from "./components/A_propos";
 import Accueil from "./components/Accueil";

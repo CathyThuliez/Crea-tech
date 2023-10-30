@@ -291,6 +291,29 @@ b {
   visibility: visible;
 }
 
+/* AVIS */
+/* Style du carrousel  */
+.swiper {
+  padding: 10rem;
+  margin-top: 10rem;
+  width: 100rem;
+}
+
+.swiper-slide {
+  background-image: url(images/BG_ACCUEIL/15634900_5660676.jpg);
+  background-size: cover;
+  width: 30rem;
+  height: 50rem;
+}
+
+.swiper-slide p {
+  padding: 1rem;
+  margin-left: 20rem;
+  text-align: justify;
+  width: 60rem;
+  height: 20rem;
+}
+
 /* A PROPOS */
 /* Style de la page a propos */
 section.about {
@@ -468,7 +491,7 @@ h2 {
 /* Style de base pour la page contact */
 
 section.contact {
-  padding-top: 1rem;
+  margin-top: 10rem;
   height: 100dvh;
   width: auto;
   margin-bottom: 10rem;
