@@ -49,7 +49,7 @@ const Header = () => {
               <a href="#services">Services</a>
             </li>
             <li className={activeSection === "about" ? "active" : ""}>
-              <a href="#about">À Propos</a>
+              <a href="#about">A Propos</a>
             </li>
             <li className={activeSection === "projects-title" ? "active" : ""}>
               <a href="#projects-title">Avis</a>

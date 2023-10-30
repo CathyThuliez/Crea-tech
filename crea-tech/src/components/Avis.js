@@ -73,15 +73,19 @@ export default function App() {
           <p> Avis 2 </p>
         </SwiperSlide>
         <SwiperSlide>
+        <h2> Avis 3 </h2>
           <p> Avis 3 </p>
         </SwiperSlide>
         <SwiperSlide>
+        <h2> Avis 4 </h2>
           <p> Avis 4 </p>
         </SwiperSlide>
         <SwiperSlide>
+        <h2> Avis 5 </h2>
           <p> Avis 5 </p>
         </SwiperSlide>
         <SwiperSlide>
+        <h2> Avis 6 </h2>
           <p> Avis 6 </p>
         </SwiperSlide>
       </Swiper>

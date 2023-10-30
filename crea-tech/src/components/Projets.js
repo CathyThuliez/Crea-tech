@@ -50,6 +50,7 @@ const Projets = () => {
           />
         </div>
       </section>
+      <div className="section-separator"></div>
     </Fragment>
   );
 };
