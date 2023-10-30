@@ -24,6 +24,14 @@ b {
 /* HEADER */
 /* Mettre à la bonne taille le logo dans le Header */
 
+.section-separator {
+  background-color: #722375;
+  height: 3px;
+  width: 50%;
+  margin-left: 22rem;
+  margin-top: 2rem;
+}
+
 .fixed-header {
   position: fixed;
   top: 0;

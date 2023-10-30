@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import Ecran from "../images/ICON_SERVICES/icons8-télévision-100.png";
 import WordPress from "../images/ICON_SERVICES/icons8-wordpress.svg";
 import Caddie from "../images/ICON_SERVICES/icons8-caddie-96.png";
@@ -73,31 +73,34 @@ const Services = () => {
   ];
 
   return (
-    <section className="services-page" id="services">
-      <h2>Nos Services</h2>
-      <div className="services">
-        <div className="service-row">
-          {serviceData.slice(0, 3).map((service, index) => (
-            <Service
-              key={index}
-              image={service.image}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
+    <Fragment>
+      <section className="services-page" id="services">
+        <h2>Nos Services</h2>
+        <div className="services">
+          <div className="service-row">
+            {serviceData.slice(0, 3).map((service, index) => (
+              <Service
+                key={index}
+                image={service.image}
+                title={service.title}
+                description={service.description}
+              />
+            ))}
+          </div>
+          <div className="service2">
+            {serviceData.slice(3).map((service, index) => (
+              <Service
+                key={index}
+                image={service.image}
+                title={service.title}
+                description={service.description}
+              />
+            ))}
+          </div>
         </div>
-        <div className="service2">
-          {serviceData.slice(3).map((service, index) => (
-            <Service
-              key={index}
-              image={service.image}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+      <div className="section-separator"></div>
+    </Fragment>
   );
 };
 
