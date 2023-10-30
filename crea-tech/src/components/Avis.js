@@ -30,67 +30,71 @@
 
 // export default Avis;
 
-import React from 'react';
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import 'swiper/css';
-// import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-
-export default function App() {
+import { Pagination } from "swiper/modules";
+const Carousel = () => {
   return (
-    <>
+    <section>
+      <h2>Avis</h2>
       <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
+        slidesPerView={4}
+        spaceBetween={40}
         centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+        pagination={{
+          clickable: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <h2> Avis 1 </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, blanditiis? Corporis recusandae voluptate delectus soluta nobis mollitia vel quos corrupti maiores itaque id ipsa nihil debitis, non praesentium sit in?
-          Totam quidem error earum neque aperiam enim magni magnam doloremque, vitae facere, laborum debitis saepe quibusdam odio. Enim ratione molestias exercitationem est, placeat magnam labore cum ex voluptatibus quaerat voluptas.
-          Animi, assumenda corporis? Harum vel fuga, quasi possimus ut non laboriosam? Similique possimus, ab dicta corporis praesentium obcaecati saepe veniam deleniti blanditiis placeat dolorum quos quo nisi cum architecto inventore?
-          Minima, ratione! Ipsum officiis excepturi accusantium eaque. </p>
+          <h3> Avis 1 </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            blanditiis? Corporis recusandae voluptate delectus soluta nobis
+            mollitia vel quos corrupti maiores itaque id ipsa nihil debitis, non
+            praesentium sit in? Totam quidem error earum neque aperiam enim
+            magni magnam doloremque, vitae facere, laborum debitis saepe
+            quibusdam odio.
+          </p>
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 2 </h2>
-          <p> Avis 2 </p>
+          <h3> Avis 2 </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, inventore?
+          </p>
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 3 </h2>
-          <p> Avis 3 </p>
+          <h3> Avis 3 </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut
+            consectetur nobis provident totam recusandae, perferendis at
+            consequuntur repudiandae ex est sapiente quibusdam autem, fugit iure
+            ipsam veniam quas necessitatibus.
+          </p>
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 4 </h2>
+          <h3> Avis 4 </h3>
           <p> Avis 4 </p>
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 5 </h2>
+          <h3> Avis 5 </h3>
           <p> Avis 5 </p>
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 6 </h2>
+          <h3> Avis 6 </h3>
           <p> Avis 6 </p>
         </SwiperSlide>
       </Swiper>
-    </>
+    </section>
   );
-}
+};
 
-
+export default Carousel;
