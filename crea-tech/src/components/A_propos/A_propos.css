@@ -1,0 +1,33 @@
+/* A PROPOS */
+/* Style de la page a propos */
+section.about {
+    height: 100dvh;
+    width: auto;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .content {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .paragrapheAbout {
+    margin-top: 3.1rem;
+    width: 45%;
+    text-align: justify;
+  }
+  
+  .listAbout {
+    width: 40%;
+    margin-right: 0;
+  }
+  
+  .check-logo {
+    float: left;
+    width: 1.4rem;
+    margin-left: 0;
+    margin-right: 10px;
+  }

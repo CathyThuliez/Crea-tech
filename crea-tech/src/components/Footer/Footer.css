@@ -1,0 +1,54 @@
+/* FOOTER  */
+/* Style de base pour le footer */
+footer {
+    background-image: url(../images/BG_HEAD_FOOT/studio-background.jpg);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Style et disposition pour le footer */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* Créer un espace égale entre chaque élément */
+    align-items: center;
+    flex-wrap: wrap;
+    /* Permet aux éléments de passer à la ligne si l'espace est insuffisant */
+  }
+  
+  /* Permet d'obtenir le bloc du milieu du footer */
+  .footer-legal-mention {
+    display: block;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  /* Styles pour les icônes de médias sociaux à droite */
+  .footer-social-media {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles pour les icônes de médias sociaux */
+  img {
+    width: 1.9rem;
+    height: auto;
+    margin-left: 10px;
+    /* Espacement entre les icônes */
+  }
+  
+  /* Nouvelle taille logo facebook */
+  .facebook-logo {
+    width: 1.438rem;
+    margin-right: 5px;
+    /* Espacement entre les icônes */
+  }
+  
+  /* Ajouter un hover pour les icônes de médias sociaux */
+  .footer-social-media img:hover {
+    opacity: 0.7;
+  }
+  
