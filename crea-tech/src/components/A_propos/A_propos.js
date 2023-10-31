@@ -15,19 +15,19 @@ class A_propos extends Component {
             <div className="content">
               <div className="paragrapheAbout">
                 <p>
-                  Chez Créa-tech, nous créons des sites Internet pour les
-                  professionnels, quel que soit le secteur d'activité.
+                  Chez <b>Créa-tech</b>, nous créons des <b>sites Internet</b> pour <b>les
+                  professionnels</b>, quel que soit le secteur d'activité.
                 </p>
                 <p>
                   {" "}
-                  Notre priorité est de comprendre les besoins de nos clients,
+                  Notre priorité est de <b>comprendre les besoins de nos clients</b>,
                   les aider à les exprimer si nécessaire, et à mettre en oeuvre
                   les solutions les plus adaptées qui permettront d'atteindre
                   les objectifs fixés.
                 </p>
                 <p>
-                  Nous nous donnons pour mission de vous aider à tirer le
-                  meilleur parti de la puissance du numérique, en la combinant à
+                  Nous nous donnons pour mission de vous <b>aider</b> à tirer le
+                  meilleur parti de la puissance du <b>numérique</b>, en la combinant à
                   la qualité de la relation humaine.
                 </p>
               </div>

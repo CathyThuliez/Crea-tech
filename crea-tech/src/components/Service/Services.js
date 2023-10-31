@@ -76,7 +76,7 @@ const Services = () => {
   return (
     <Fragment>
       <section className="services-page" id="services">
-        <h2>Nos Services</h2>
+        <h2>Services</h2>
         <div className="services">
           <div className="service-row">
             {serviceData.slice(0, 3).map((service, index) => (

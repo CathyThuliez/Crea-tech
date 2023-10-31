@@ -2,7 +2,8 @@
 .accueil {
     background-image: url(../images/BG_ACCUEIL/15634900_5660676.jpg);
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
