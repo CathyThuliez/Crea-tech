@@ -1,60 +1,71 @@
-import React from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-// import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-
-// import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import img1 from "../images/IMG_AVIS/boats-2378150_1280.jpg";
+import img2 from "../images/IMG_AVIS/darling-4077123_1280.jpg";
+import img3 from "../images/IMG_AVIS/flower-field-250016_1280.jpg";
+import img4 from "../images/IMG_AVIS/forest-438432_1280.jpg";
+import img5 from "../images/IMG_AVIS/night-2458342_1280.jpg";
+import img6 from "../images/IMG_AVIS/rainbow-5372890_1280.jpg";
 
 export default function App() {
   return (
+    <div className="container">
+      <h1 className="heading">Image Gallery</h1>
       <Swiper
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        loop={true}
+        slidesPerView={"auto"}
         coverflowEffect={{
-          rotate: 50,
+          rotate: 0,
           stretch: 0,
           depth: 100,
-          modifier: 1,
-          slideShadows: true,
+          modifier: 2.5,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        pagination={{ el: ".swiper-pagination", clickable: true }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
       >
         <SwiperSlide>
-          <h2> Avis 1 </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, blanditiis? Corporis recusandae voluptate delectus soluta nobis mollitia vel quos corrupti maiores itaque id ipsa nihil debitis, non praesentium sit in?
-          Totam quidem error earum neque aperiam enim magni magnam doloremque, vitae facere, laborum debitis saepe quibusdam odio. Enim ratione molestias exercitationem est, placeat magnam labore cum ex voluptatibus quaerat voluptas.
-          Animi, assumenda corporis? Harum vel fuga, quasi possimus ut non laboriosam? Similique possimus, ab dicta corporis praesentium obcaecati saepe veniam deleniti blanditiis placeat dolorum quos quo nisi cum architecto inventore?
-          Minima, ratione! Ipsum officiis excepturi accusantium eaque. </p>
+          <img src={img1} alt="slider1" />
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 2 </h2>
-          <p> Avis 2 </p>
+          <img src={img2} alt="slider2" />
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 3 </h2>
-          <p> Avis 3 </p>
+          <img src={img3} alt="slider3" />
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 4 </h2>
-          <p> Avis 4 </p>
+          <img src={img4} alt="slider4" />
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 5 </h2>
-          <p> Avis 5 </p>
+          <img src={img5} alt="slider5" />
         </SwiperSlide>
         <SwiperSlide>
-        <h2> Avis 6 </h2>
-          <p> Avis 6 </p>
+          <img src={img6} alt="slider6" />
         </SwiperSlide>
-      </Swiper>
-)};
 
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <i className="ri-arrow-left-line"></i>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <i className="ri-arrow-right-line"></i>
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
+    </div>
+  );
+}
