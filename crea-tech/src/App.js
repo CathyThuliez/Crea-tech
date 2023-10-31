@@ -17,6 +17,7 @@ function App() {
       <Accueil />
       <Services />
       <A_propos />
+      <Avis />
       <Projets />
       <Avis />
       <Contact />
