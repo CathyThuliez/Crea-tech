@@ -12,7 +12,7 @@ import img4 from "../images/IMG_AVIS/forest-438432_1280.jpg";
 import img5 from "../images/IMG_AVIS/night-2458342_1280.jpg";
 import img6 from "../images/IMG_AVIS/rainbow-5372890_1280.jpg";
 
-export default function App() {
+const Avis = () => {
   return (
     <div className="container">
       <h1 className="heading">Image Gallery</h1>
@@ -69,3 +69,5 @@ export default function App() {
     </div>
   );
 }
+
+export default Avis;
