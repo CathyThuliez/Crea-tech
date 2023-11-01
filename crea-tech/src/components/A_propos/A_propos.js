@@ -33,7 +33,6 @@ class A_propos extends Component {
               </div>
               <div className="listAbout">
                 <h3>Concrètement, comment ça se passe ?</h3>
-                <p>Dans les grandes lignes :</p>
                 <ul>
                   <img src={Check} alt="" className="check-logo" />
                   <li> Nous convenons d'un rendez-vous</li>

@@ -1,5 +1,6 @@
 /* A PROPOS */
 /* Style de la page a propos */
+
 section.about {
   margin-top: -6rem;
   height: 100vh;
@@ -23,6 +24,11 @@ section.about {
 .listAbout {
   width: 40%;
   margin-right: 0;
+  text-align: start;
+}
+
+.intro {
+  margin-left: 190px;
 }
 
 .check-logo {
