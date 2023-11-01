@@ -1,0 +1,76 @@
+/* ACCUEIL */
+.accueil {
+    background-image: url(../images/BG_ACCUEIL/15634900_5660676.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .Logo_accueil {
+    width: 20rem;
+    height: auto;
+  }
+  
+  .paragraphe {
+    color: black;
+    width: 60%;
+    /* Ceci permet de mettre sur le coté une div, on lui dit de prendre 45% de la taille de l'écran*/
+    text-align: justify;
+  }
+  
+  #btn1 {
+    box-shadow: -0.5em 0.5em 0.4em black;
+  }
+  
+  .btn {
+    border: none;
+    border-radius: 7px;
+    box-shadow: -0.5em 0.5em 0.4em black;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #eeeeee;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #722375;
+    padding: 15px 50px;
+    margin: 0 auto;
+  }
+  
+  .btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: pink;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+  }
+  
+  .btn:hover:after {
+    -webkit-transform: rotate(39deg);
+    transform: translateX(-7%) translateY(-28.5%) rotate(39deg);
+  }
+  
+  .btn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn a:hover {
+    color: black;
+    opacity: 1;
+  }
+  
