@@ -11,14 +11,14 @@ import Droite from "../images/ICON_CAROUSEL/fleche-droite.png";
 
 const Avis = () => {
   return (
-    <div className="container">
+    <div className="container" id="avis">
       <h2 className="heading">Les avis de nos clients</h2>
       <Swiper
         effect="fade"
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={true} 
         loop={true}
-        slidesPerView={"auto"}
+        slidesPerView={3}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -40,7 +40,7 @@ const Avis = () => {
             <h2>Avis 1</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit
-              laboriosam illo inventore?{" "}
+              laboriosam illo inventore? 
             </p>
           </div>
         </SwiperSlide>
