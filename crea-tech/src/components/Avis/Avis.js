@@ -1,59 +1,20 @@
-// import React from "react";
-// import {
-//   CarouselProvider,
-//   Slider,
-//   Slide,
-//   ButtonBack,
-//   ButtonNext,
-// } from "pure-react-carousel";
-
-// const Avis = () => {
-//   return (
-//     <CarouselProvider className="carousel"
-//       naturalSlideWidth={6}
-//       naturalSlideHeight={1}
-//       totalSlides={6}
-//     >
-//       <Slider className="slide">
-//         <Slide index={0}>Avis 1</Slide>
-//         <Slide index={1}>Avis 2</Slide>
-//         <Slide index={2}>Avis 3</Slide>
-//         <Slide index={3}>Avis 4</Slide>
-//         <Slide index={4}>Avis 5</Slide>
-//         <Slide index={5}>Avis 6</Slide>
-//       </Slider>
-//       <ButtonBack>Précédent</ButtonBack>
-//       <ButtonNext>Suivant</ButtonNext>
-//     </CarouselProvider>
-//   );
-// };
-
-// export default Avis;
-
-// Import Swiper React components
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Avis.css";
 import "swiper/css";
-// import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Autoplay } from "swiper/modules";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import img10 from "../images/IMG_AVIS/boats-2378150_1280.jpg";
-import img20 from "../images/IMG_AVIS/darling-4077123_1280.jpg";
-import img30 from "../images/IMG_AVIS/flower-field-250016_1280.jpg";
-import img40 from "../images/IMG_AVIS/forest-438432_1280.jpg";
-import img50 from "../images/IMG_AVIS/night-2458342_1280.jpg";
-import img60 from "../images/IMG_AVIS/rainbow-5372890_1280.jpg";
 import Gauche from "../images/ICON_CAROUSEL/fleche-gauche.png";
 import Droite from "../images/ICON_CAROUSEL/fleche-droite.png";
 
 const Avis = () => {
   return (
     <div className="container">
-      <h1 className="heading">Image Gallery</h1>
+      <h2 className="heading">Les avis de nos clients</h2>
       <Swiper
-        effect={"coverflow"}
+        effect="fade"
         grabCursor={true}
         centeredSlides={true}
         loop={true}
@@ -70,26 +31,63 @@ const Avis = () => {
           prevEl: ".swiper-button-prev",
           clickable: true,
         }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }} // Défilement automatique avec fade
         className="swiper_container"
       >
-        <SwiperSlide>
-          <img src={img10} alt="slider1" />
+        <SwiperSlide className="slide_container">
+          <div className="slide-avis">
+            <h2>Avis 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit
+              laboriosam illo inventore?{" "}
+            </p>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img20} alt="slider2" />
+        <SwiperSlide className="slide_container">
+          <div className="slide-avis">
+            <h2>Avis 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit
+              laboriosam illo inventore?
+            </p>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img30} alt="slider3" />
+        <SwiperSlide className="slide_container">
+          <div className="slide-avis">
+            <h2>Avis 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit
+              laboriosam illo inventore?
+            </p>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img40} alt="slider4" />
+        <SwiperSlide className="slide_container">
+          <div className="slide-avis">
+            <h2>Avis 4</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit
+              laboriosam illo inventore?
+            </p>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img50} alt="slider5" />
+        <SwiperSlide className="slide_container">
+          <div className="slide-avis">
+            <h2>Avis 5</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit
+              laboriosam illo inventore?
+            </p>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img60} alt="slider6" />
+        <SwiperSlide className="slide_container">
+          <div className="slide-avis">
+            <h2>Avis 6</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit
+              laboriosam illo inventore?
+            </p>
+          </div>
         </SwiperSlide>
 
         <div className="slider-controler">
@@ -102,6 +100,7 @@ const Avis = () => {
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
+      <div className="section-separator"></div>
     </div>
   );
 };

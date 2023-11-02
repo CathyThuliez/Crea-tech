@@ -9,7 +9,7 @@ class Footer extends Component {
     return (
       <footer>
         <div className="footer-container">
-          <a href="#">
+          <a href="#contact">
             <p className="footer-contact">Contactez moi</p>
           </a>
           <div className="footer-legal-mention">
@@ -24,17 +24,20 @@ class Footer extends Component {
             </a>
           </div>
           <p className="footer-social-media">
-            <a href="#">
+            <a
+              href="https://www.facebook.com/Cr34T3ch/?locale=fr_FR"
+              target="_blank"
+            >
               <img
                 className="facebook-logo"
                 src={Facebook}
                 alt="facebook-logo"
               />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/cr3at3ch/" target="blank">
               <img src={Instagram} alt="instagram-logo" />
             </a>
-            <a href="#">
+            <a href="https://fr.linkedin.com/company/cr%C3%A9a-tech?trk=public_profile_topcard-current-company" target="blanlk">
               <img src={Linkedin} alt="linkedin-logo" />
             </a>
           </p>
