@@ -23,6 +23,13 @@ b {
   margin: auto;
 }
 
+@media (maw-width: 480px){
+  html{
+    width: 100%;
+    height: auto;
+  };
+}
+
 @media (min-width: 1440px) {
   html {
     zoom: 1.2;
