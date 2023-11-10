@@ -16,6 +16,11 @@
   height: auto;
 }
 
+.logo2{
+  display: none;
+}
+
+
 /* effet sur la navbar */
 .BurgerMenu {
   display: none;
@@ -98,11 +103,12 @@
 
 @media (max-width: 478px) {
   .navBar {
-    background-image: url(../images/BG_HEAD_FOOT/studio-background.jpg);
-    height: 5rem;
+    min-height: 5rem;
+    height: auto;
   }
 
-  .logo {
+  .logo{
+    /* display: none; */
     position: absolute;
     left: 2rem;
     top: 1rem;
@@ -131,14 +137,14 @@
   }
   nav .open{
     display: flex;
+    display: none;
   }
 
   nav ul li {
-    display: none;
     width: 100%;
     text-align: center;
   }
-
+  
   nav ul li a {
     margin: 0.25rem 0.5rem;
   }
