@@ -1,6 +1,7 @@
 import "./Header.css";
 import React, { useEffect, useState } from "react";
 import Logo from "../images/Logo_Crea_Tech/logo_blanc.png";
+import BurgerMenu from "../images/ICON NAVBAR/Icon_Rose.png";
 
 const Header = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -14,7 +15,10 @@ const Header = () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
           setActiveSection(section.getAttribute("id"));
         }
       });
@@ -34,38 +38,52 @@ const Header = () => {
   }, []);
 
   const headerClassName = isHeaderFixed ? "navBar fixed-header" : "navBar";
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div>
+    <div className="NavBar">
       <nav className={headerClassName}>
         <a href="#accueil">
           <img src={Logo} alt="" className="logo" />
         </a>
-        <div className="Nav-links">
-          <ul>
-            <li className={activeSection === "accueil" ? "active" : ""}>
-              <a href="#accueil">Accueil</a>
-            </li>
-            <li className={activeSection === "services" ? "active" : ""}>
-              <a href="#services">Services</a>
-            </li>
-            <li className={activeSection === "about" ? "active" : ""}>
-              <a href="#about">A Propos</a>
-            </li>
-            <li className={activeSection === "projects-title" ? "active" : ""}>
-              <a href="#projects-title">Avis</a>
-            </li>
-            <li className={activeSection === "contact" ? "active" : ""}>
-              <a href="#contact">Contact</a>
-            </li>
-            <div className="contact_Header">
-              <a href="contact">
-                contact@crea-tech.fr{" "}
-                <p className="number_Header">06 42 14 03 29</p>
-              </a>
-            </div>
-          </ul>
+        <div className="BurgerMenu">
+          <img
+            src={BurgerMenu}
+            alt=""
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
+          />
         </div>
+        <ul className={menuOpen ? "open" : ""}>
+          <div className="Nav-links">
+            <ul>
+              <li className={activeSection === "accueil" ? "active" : ""}>
+                <a href="#accueil">Accueil</a>
+              </li>
+              <li className={activeSection === "services" ? "active" : ""}>
+                <a href="#services">Services</a>
+              </li>
+              <li className={activeSection === "about" ? "active" : ""}>
+                <a href="#about">A Propos</a>
+              </li>
+              <li
+                className={activeSection === "projects-title" ? "active" : ""}
+              >
+                <a href="#avis">Avis</a>
+              </li>
+              <li className={activeSection === "contact" ? "active" : ""}>
+                <a href="#contact">Contact</a>
+              </li>
+              <div className="contact_Header">
+                <a href="contact">
+                  contact@crea-tech.fr{" "}
+                  <p className="number_Header">06 42 14 03 29</p>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </ul>
       </nav>
     </div>
   );

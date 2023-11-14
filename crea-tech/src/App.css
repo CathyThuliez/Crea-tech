@@ -14,7 +14,6 @@ h3,
 b {
   text-align: center;
   color: #722375;
-  text-shadow: 5px 4px 5px pink, 5px 4px 5px black
 }
 
 .section-separator {
@@ -22,6 +21,13 @@ b {
   height: 3px;
   width: 50%;
   margin: auto;
+}
+
+@media (maw-width: 480px){
+  html{
+    width: 100%;
+    height: auto;
+  };
 }
 
 @media (min-width: 1440px) {

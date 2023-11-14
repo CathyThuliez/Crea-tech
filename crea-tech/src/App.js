@@ -9,11 +9,14 @@ import Projets from "./components/Projet/Projets";
 import Services from "./components/Service/Services";
 import Contact from "./components/Contact/Contact";
 import Avis from "./components/Avis/Avis";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>
       <Accueil />
       <Services />
       <A_propos />
