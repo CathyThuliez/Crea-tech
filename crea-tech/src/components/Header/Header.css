@@ -16,6 +16,11 @@
   height: auto;
 }
 
+.logo2{
+  display: none;
+}
+
+
 /* effet sur la navbar */
 .BurgerMenu {
   display: none;
@@ -47,10 +52,7 @@
 /* Styles pour le logo et autres éléments de la navbar */
 .logo {
   max-width: 100px; /* Largeur du logo */
-}
-
-.contact_Header {
-  color: white;
+  margin-left: 2rem;
 }
 
 /* Mise en place de la navBar */
@@ -73,6 +75,7 @@
 .navBar .Nav-links ul {
   display: flex;
   align-items: center;
+  margin-right: 2rem;
 }
 
 .navBar .Nav-links ul li {
@@ -96,15 +99,14 @@
   padding-right: 15px;
 }
 
-@media (max-width: 478px) {
+@media (max-width: 825px) {
   .navBar {
-    background-image: url(../images/BG_HEAD_FOOT/studio-background.jpg);
-    height: 5rem;
+    min-height: 5rem;
+    height: auto;
   }
 
-  .logo {
+  .logo{
     position: absolute;
-    left: 2rem;
     top: 1rem;
   }
 
@@ -119,27 +121,16 @@
     top: 1.7rem;
   }
 
-  nav {
-    flex-direction: column;
-    align-items: start;
-  }
-
   nav ul {
+    display: none;
     flex-direction: column;
-    width: 100%;
+    margin-top: 1.8rem;
     margin-bottom: 0.25rem;
   }
+
   nav .open{
+    width: 100%;
     display: flex;
   }
-
-  nav ul li {
-    display: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  nav ul li a {
-    margin: 0.25rem 0.5rem;
-  }
 }
+

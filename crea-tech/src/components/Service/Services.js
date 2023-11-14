@@ -43,18 +43,19 @@ const Services = () => {
   const serviceData = [
     {
       image: Ecran,
-      title: "Service 1",
-      description: "Description du service 1.",
+      title: "Conception de sites web",
+      description:
+        "A notre époque avoir un site web est devenu indispensable tant pour la visibilité de votre entreprise que pour sa notoriété. Ce qui fait de votre site la vitrine de votre entreprise, le premier contact que le client a avec elle. Crea-Tech est là pour vous aider à choisir le site qui vous conviendra le mieux et qui vous permettra d`accroître votre clientèle.",
     },
     {
       image: WordPress,
-      title: "Service 2",
-      description: "Description du service 2.",
+      title: "Site vitrine",
+      description: "Site créé avec le CMS WordPress et le thème de votre choix ou from scratch. C’est la meilleure façon de montrer votre travail sur plusieurs pages. Nous nous chargeons, bien entendu, de vous former afin que vous puissiez faire d’éventuelles modifications en toute sérénité.",
     },
     {
       image: Caddie,
-      title: "Service 3",
-      description: "Description du service 3.",
+      title: "Site E-commerce",
+      description: "Vous souhaitez développer votre activité en ligne ? Rien de tel qu’un site E-commerce ! Pour vous donner la meilleure expérience possible, nous utilisons le CMS WordPress couplé au module WooCommerce.",
     },
     {
       image: Smartphone,
@@ -63,8 +64,8 @@ const Services = () => {
     },
     {
       image: Ordi,
-      title: "Service 5",
-      description: "Description du service 5.",
+      title: "Site one page",
+      description: "Avec ou sans CMS, c’est le site idéal pour les personnes pressées qui souhaitent que le site soit terminé dans les plus brefs délais. Ce genre de site convient parfaitement aux personnes qui désirent montrer en quoi consiste leur activité.",
     },
     {
       image: RS,
