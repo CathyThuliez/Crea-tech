@@ -17,11 +17,13 @@
 
 /* Styles pour le texte dans chaque slide */
 .slide-avis {
+  height: 300px;
   margin-top: 2rem;
   box-shadow: -0.5em 0.5em 0.4em  #722375b0;
   border-radius: 3rem;
   padding: 2rem;
   text-align: justify;
+  overflow-y: scroll;
 }
 
 /* Styles pour les flèches de navigation */

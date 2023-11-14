@@ -16,17 +16,12 @@
   height: auto;
 }
 
-.logo2{
-  display: none;
-}
-
-
 /* effet sur la navbar */
 .BurgerMenu {
   display: none;
 }
 
-.navBar {
+.NavBar {
   color: white; /* Couleur du texte par défaut */
   position: fixed;
   top: 0;
@@ -89,16 +84,6 @@
   font-style: oblique;
 }
 
-.number_Header {
-  text-align: center;
-  margin-top: 4px;
-}
-
-.contact_Header {
-  margin-top: 6px;
-  padding-right: 15px;
-}
-
 @media (max-width: 825px) {
   .navBar {
     min-height: 5rem;
@@ -108,10 +93,6 @@
   .logo{
     position: absolute;
     top: 1rem;
-  }
-
-  .contact_Header {
-    display: none;
   }
 
   .BurgerMenu {
