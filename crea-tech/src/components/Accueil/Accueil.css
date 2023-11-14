@@ -28,7 +28,7 @@
 
 .btn {
   border: none;
-  border-radius: 7px;
+  border-radius: 0.438rem;
   box-shadow: -0.5em 0.5em 0.4em black;
   display: block;
   text-align: center;
@@ -39,9 +39,9 @@
   position: relative;
   color: #eeeeee;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   background-color: #722375;
-  padding: 15px 50px;
+  padding: 0.938rem 3.125rem;
   margin: 0 auto;
 }
 
@@ -74,19 +74,56 @@
   opacity: 1;
 }
 
-@media (max-width: 825px) {
+/* Responsive */
+
+@media screen and (max-width: 480px) {
   .accueil {
     background-size: cover;
     width: 100vw;
     height: 100vh;
     flex-direction: column;
-    }
-
-  .Logo_accueil {
-    width: 20rem;
   }
 
-  .paragraphe {
-    margin-bottom: -10rem;
+  .Logo_accueil {
+    width: 10rem;
+    margin-left: -0.5rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .accueil {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .Logo_accueil {
+    width: 15rem;
+    margin-left: -0.5rem;
+    margin-top: 5rem;
+  }
+
+  .btn {
+    margin-top: -2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .accueil {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .Logo_accueil {
+    width: 30rem;
+    margin-left: -4rem;
+  }
+
+  .btn {
+    margin-top: -10rem;
   }
 }
