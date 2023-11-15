@@ -36,11 +36,6 @@ const Contact = ({ image, title, description }) => {
 const Contacts = () => {
   const contactData = [
     {
-      image: Position,
-      title: "Nous rencontrer",
-      description: "Sur rendez-vous, 18 rue lorem , Lens"
-    },
-    {
       image: Mail,
       title: "Nous écrire",
       description: "contact@crea-tech.fr",
@@ -48,7 +43,7 @@ const Contacts = () => {
     {
       image: Tel,
       title: "Nous appeler",
-      description: "06-42-14-03-29",
+      description: "06 42 14 03 29",
     },
   ];
 

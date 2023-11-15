@@ -6,8 +6,8 @@ class Accueil extends Component {
     return (
       <Fragment>
         <section className="accueil" id="accueil">
-          <div className="paragraphe">
-            <img src={Logo2} alt="logo" className="Logo_accueil" />
+        <div className="paragraphe">
+        <img src={Logo2} alt="logo" className="Logo_accueil" />
             <br />
             <q>
               La seule façon de faire du bon boulot, c'est d'aimer ce que vous
