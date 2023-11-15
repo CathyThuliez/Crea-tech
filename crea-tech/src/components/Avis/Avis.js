@@ -8,7 +8,6 @@ import { Autoplay } from "swiper/modules";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import Gauche from "../images/ICON_CAROUSEL/fleche-gauche.png";
 import Droite from "../images/ICON_CAROUSEL/fleche-droite.png";
-
 const Avis = () => {
   return (
     <div className="container" id="avis">
