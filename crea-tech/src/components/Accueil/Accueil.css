@@ -17,7 +17,7 @@
 
 .paragraphe {
   color: black;
-  width: 45%;
+  width: 80%;
   /* Ceci permet de mettre sur le coté une div, on lui dit de prendre 45% de la taille de l'écran*/
   text-align: justify;
 }
@@ -245,11 +245,17 @@
   }
 
   .Logo_accueil {
-    width: 30rem;
-    margin-left: -4rem;
+    width: 20rem;
+    margin-left: 2rem;
   }
 
   .btn {
     margin-top: -10rem;
+  }
+  
+  .paragraphe{
+    width: 50%;
+    font-size: 22px;
+    padding-top: 4rem;
   }
 }

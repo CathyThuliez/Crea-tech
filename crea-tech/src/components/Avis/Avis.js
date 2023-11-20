@@ -31,7 +31,7 @@ const Avis = () => {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        autoplay={{ delay: 3000, disableOnInteraction: false }} // Défilement automatique avec fade
+        // autoplay={{ delay: 6000, disableOnInteraction: false }} // Défilement automatique avec fade
         className="swiper_container"
       >
         <SwiperSlide className="slide_container">

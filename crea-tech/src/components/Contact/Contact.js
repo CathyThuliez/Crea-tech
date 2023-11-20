@@ -74,7 +74,7 @@ const Contact = () => {
               required
             >
               <option value={""} hidden>
-                Choissir une option
+                Choisir une option
               </option>
               <option value={"wordpress"}>Wordpress</option>
               <option value={"formation"}>Formation</option>
