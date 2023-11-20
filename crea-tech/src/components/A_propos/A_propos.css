@@ -2,7 +2,9 @@
 /* Style de la page a propos */
 
 section.about {
-  margin-top: -6rem;
+  margin-top: 5rem;
+  margin-left: 17rem;
+  margin-bottom: -9rem;
   height: 100vh;
   width: auto;
   display: flex;
@@ -16,14 +18,15 @@ section.about {
 }
 
 .paragrapheAbout {
-  margin-top: 3.1rem;
-  width: 45%;
+  margin-top: rem;
+  margin-left: -20rem;
+  width: 70%;
   text-align: justify;
 }
 
 .listAbout {
-  width: 40%;
-  margin-right: 0;
+  width: 70%;
+  margin-right: -20rem;
   text-align: start;
 }
 
