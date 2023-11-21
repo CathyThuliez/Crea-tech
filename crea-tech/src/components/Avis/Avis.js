@@ -35,7 +35,7 @@ const Avis = () => {
         className="swiper_container"
       >
         <SwiperSlide className="slide_container">
-          <div className="slide-avis">
+          <div className="slide-avis" onclick="handleClickViewMore(this)">
             <h2>Romanski </h2>
             <h3>Graphiste et plasticien.</h3>
             <p>
