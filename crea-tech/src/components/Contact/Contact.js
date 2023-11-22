@@ -8,23 +8,22 @@ const Contact = () => {
     <section id="contact" class="contact">
       <div className="contact-title">
         <h2>Contact</h2>
-        <div className="text-contact">
-          <p>
-            Vous avez un <b>site à réaliser ?</b>
-          </p>
-          <p>
-            <b>Une question</b>, ou tout simplement besoin d'un renseignement ?
-          </p>
-          <p>
-            <b>N'hésitez pas et contactez-nous.</b>{" "}
-          </p>
-        </div>
       </div>
-      <div className="content">
-        <div className="contact-info">
+      <div className="text-contact">
+        <p>
+          Vous avez un <b>site à réaliser ?</b>
+        </p>
+        <p>
+          <b>Une question</b>, ou tout simplement besoin d'un renseignement ?
+        </p>
+        <p>
+          <b>N'hésitez pas et contactez-nous.</b>{" "}
+        </p>
+        <div className="info">
           <Info />
         </div>
-
+      </div>
+      <div className="form">
         <form className="contact-form">
           <label>
             Nom
@@ -32,7 +31,7 @@ const Contact = () => {
               className="form-name"
               id="name"
               name="name"
-              placeholder="Nom"
+              placeholder="Magination"
               type="text"
               required
             />
@@ -44,7 +43,7 @@ const Contact = () => {
               className="form-firstname"
               id="firstname"
               name="firstname"
-              placeholder="Prénom"
+              placeholder="Kelly"
               type="text"
               required
             />
@@ -58,18 +57,18 @@ const Contact = () => {
               name="email"
               defaultValue=""
               render={({ field }) => <input {...field} />}
-              placeholder="Email"
+              placeholder="KellyMagination@gmail.com"
               type="email"
               required
             />
           </label>
+
           <label>
             Sujet
             <select
               className="form-sujet"
               id="select"
               name="select"
-              placeholder="Sujet"
               type="select"
               required
             >
@@ -98,7 +97,7 @@ const Contact = () => {
               rows="5"
             />
           </label>
-          <button className="btn" type="submit">
+          <button className="btn" type="submit" id="btn-contact">
             <a href="#">
               <span>Envoyer la demande </span>
             </a>

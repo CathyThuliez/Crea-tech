@@ -6,7 +6,7 @@ class Accueil extends Component {
     return (
       <Fragment>
         <section className="accueil" id="accueil">
-        <div className="paragraphe">
+        <div className="paragraphe_accueil">
         <img src={Logo2} alt="logo" className="Logo_accueil" />
             <br />
             <q>
@@ -16,7 +16,7 @@ class Accueil extends Component {
             <p>Steve Jobs</p>
           </div>
           <div>
-            <button className="btn" id="btn1">
+            <button className="btn" id="btn_accueil">
               <a href="#contact">
                 <span>Une idée de site ? Parlez-en ici</span>
               </a>

@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import "../AllServices/Service.css";
-import Ecran from "../images/ICON_SERVICES/icons8-télévision-100.png"
 import WordPress from "../images/ICON_SERVICES/icons8-wordpress.svg";
 import Caddie from "../images/ICON_SERVICES/icons8-caddie-96.png";
 import Smartphone from "../images/ICON_SERVICES/icons8-smartphone-96.png";
@@ -13,15 +12,15 @@ const Product = ({ imgSrc, title, description, onClick, isActive }) => {
   return (
     <div className={`bloc ${isActive ? "actived" : ""}`} onClick={onClick}>
       <div className="bloc-haut">
-      <button className="see-more"></button>
+        <button className="see-more"></button>
         <div className="rond">
           <img src={imgSrc} alt={title} />
         </div>
-        <p className="titre-section">{title}</p>
+        <p className="titre-section-service">{title}</p>
       </div>
-      <div className="contenu">
+      <div className="service-contenu">
         <img src={imgSrc} alt={title} />
-        <div className="infos">
+        <div className="infos-service">
           <p>{description}</p>
         </div>
       </div>
@@ -35,38 +34,32 @@ const Services = () => {
   const products = [
     {
       imgSrc: WordPress,
-      title: "Site vitrine",
+      title: "Windows",
       description:
         "Site créé avec le CMS WordPress et le thème de votre choix ou from scratch. C’est la meilleure façon de montrer votre travail sur plusieurs pages. Nous nous chargeons, bien entendu, de vous former afin que vous puissiez faire d’éventuelles modifications en toute sérénité.",
     },
 
     {
       imgSrc: Caddie,
-      title: "Site E-commerce",
+      title: "Internet",
       description:
         "Vous souhaitez développer votre activité en ligne ? Rien de tel qu’un site E-commerce ! Pour vous donner la meilleure expérience possible, nous utilisons le CMS WordPress couplé au module WooCommerce.",
     },
 
     {
       imgSrc: Smartphone,
-      title: "Service 4",
+      title: "Messagerie",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit...",
     },
 
     {
       imgSrc: Ordi,
-      title: "Site one page",
+      title: "RS",
       description:
         "Avec ou sans CMS, c’est le site idéal pour les personnes pressées qui souhaitent que le site soit terminé dans les plus brefs délais. Ce genre de site convient parfaitement aux personnes qui désirent montrer en quoi consiste leur activité.",
     },
 
-    {
-      imgSrc: RS,
-      title: "Service 6",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit...",
-    },
   ];
 
   const handleProductClick = (index) => {
@@ -79,19 +72,19 @@ const Services = () => {
 
   return (
     <Fragment>
-    <h2 className="second_services_title">Initiation au numérique</h2>
-    <div className="container" id="second_container">
-      {products.map((product, index) => (
-        <Product
-          key={index}
-          imgSrc={product.imgSrc}
-          title={product.title}
-          description={product.description}
-          isActive={activeProduct === index}
-          onClick={() => handleProductClick(index)}
-        />
-      ))}
-    </div>
+      <h2 className="second_services_title">Initiation au numérique</h2>
+      <div className="service_container" id="second_container">
+        {products.map((product, index) => (
+          <Product
+            key={index}
+            imgSrc={product.imgSrc}
+            title={product.title}
+            description={product.description}
+            isActive={activeProduct === index}
+            onClick={() => handleProductClick(index) && handleClick(index)}
+          />
+        ))}
+      </div>
     </Fragment>
   );
 };

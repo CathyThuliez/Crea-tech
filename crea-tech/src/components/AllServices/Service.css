@@ -9,12 +9,13 @@
   padding: 0;
 }
 
-section {
+#services {
   margin-bottom: 5rem;
+  width: 100%;
 }
 
 .first_services_title {
-  margin-left: -56rem;
+  margin-right: 68rem;
 }
 
 .second_services_title {
@@ -29,8 +30,7 @@ section {
   margin-left: 62rem;
 }
 
-.container {
-  width: 700px;
+.service_container {
   height: 500px;
   margin-left: 50px;
   display: flex;
@@ -74,8 +74,6 @@ section {
 }
 
 .see-more {
-  width: 0;
-  height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #722375;
@@ -101,23 +99,23 @@ section {
   margin-left: 20px;
 }
 
-.titre-section {
+.titre-section-service {
   margin: 0 25px;
   font-size: 15px;
   text-align: center;
 }
 
-.contenu {
+.service-contenu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contenu img {
+.service-contenu img {
   display: none;
 }
 
-.contenu p {
+.service-contenu p {
   margin-top: 2px;
   font-size: 12px;
   padding: 5px;

@@ -12,7 +12,7 @@ const Projets = () => {
     <Fragment>
       <section id="projects-title">
         <h2>Ils nous ont fait confiance</h2>
-        <div className="projets-container">
+        <div className="projects-container">
           <img
             src={image1}
             alt="Projet 1"

@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import "../AllServices/Service.css";
-import Ecran from "../images/ICON_SERVICES/icons8-télévision-100.png";
 import WordPress from "../images/ICON_SERVICES/icons8-wordpress.svg";
 import Caddie from "../images/ICON_SERVICES/icons8-caddie-96.png";
 import Smartphone from "../images/ICON_SERVICES/icons8-smartphone-96.png";
@@ -12,16 +11,17 @@ import RS from "../images/ICON_SERVICES/icons8-bavarder-100.png";
 const Product = ({ imgSrc, title, description, onClick, isActive }) => {
   return (
     <div className={`bloc ${isActive ? "actived" : ""}`} onClick={onClick}>
+    <div className={`bloc ${isActive ? "actived" : ""}`} onClick={onClick}>
       <div className="bloc-haut">
         <button className="see-more"></button>
         <div className="rond">
           <img src={imgSrc} alt={title} />
         </div>
-        <p className="titre-section">{title}</p>
+        <p className="titre-section-service">{title}</p>
       </div>
-      <div className="contenu">
+      <div className="service-contenu">
         <img src={imgSrc} alt={title} />
-        <div className="infos">
+        <div className="infos-service">
           <p>{description}</p>
         </div>
       </div>
@@ -61,12 +61,6 @@ const Services = () => {
         "Avec ou sans CMS, c’est le site idéal pour les personnes pressées qui souhaitent que le site soit terminé dans les plus brefs délais. Ce genre de site convient parfaitement aux personnes qui désirent montrer en quoi consiste leur activité.",
     },
 
-    {
-      imgSrc: RS,
-      title: "Service 6",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit...",
-    },
   ];
 
   const handleProductClick = (index) => {
@@ -79,8 +73,8 @@ const Services = () => {
 
   return (
     <Fragment>
-      <h2 className="third_services_title">??</h2>
-      <div className="container" id="third_container">
+      <h2 className="third_services_title">Dépannage et entretien informatique</h2>
+      <div className="service_container" id="third_container">
         {products.map((product, index) => (
           <Product
             key={index}
