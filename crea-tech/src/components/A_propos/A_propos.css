@@ -1,34 +1,37 @@
 /* A PROPOS */
 /* Style de la page a propos */
 
-section.about {
-  margin-top: -6rem;
-  height: 100vh;
-  width: auto;
+.about {
+  width: 100%;
+  height: 73vh;
   display: flex;
-  align-items: center;
 }
 
-.content {
-  padding-top: 4rem;
+.about_title{
+  margin-top: 9rem;
+}
+
+.about_content {
   display: flex;
-  justify-content: space-around;
+  padding-top: 4rem;
+  margin-left: 10rem;
 }
 
 .paragrapheAbout {
-  margin-top: 3.1rem;
-  width: 45%;
-  text-align: justify;
+  margin-top: 1.9rem;
+  width: 50%;
 }
 
 .listAbout {
-  width: 40%;
-  margin-right: 0;
+  width: 55%;
+  padding-left: 10rem;
   text-align: start;
 }
 
-.intro {
-  margin-left: 190px;
+h3{
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+  margin-left: -19rem  ;
 }
 
 .check-logo {
@@ -36,4 +39,9 @@ section.about {
   width: 1.4rem;
   margin-left: 0;
   margin-right: 10px;
+}
+
+#btn_about{
+  margin-top: 2rem;
+  margin-left: -3.5rem; 
 }

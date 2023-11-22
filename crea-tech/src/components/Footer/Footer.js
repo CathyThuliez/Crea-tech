@@ -2,7 +2,6 @@ import "./Footer.css";
 import React, { Component } from "react";
 import Facebook from "../images/ICON_FOOTER/facebook-logo.png";
 import Instagram from "../images/ICON_FOOTER/instagram-logo.png";
-import Linkedin from "../images/ICON_FOOTER/linkedin-logo.png";
 
 class Footer extends Component {
   render() {
@@ -13,9 +12,6 @@ class Footer extends Component {
             <p className="footer-contact">Contactez moi</p>
           </a>
           <div className="footer-legal-mention">
-            <a href="#">
-              <p className="footer-privacy">Politique de confidentialité</p>
-            </a>
             <a href="#">
               <p className="footer-notice">Mention légales</p>
             </a>

@@ -4,9 +4,10 @@
 #projects-title {
     padding-top: 30px;
     text-align: center;
+    width: 100%;
   }
   
-  .projets-container {
+  .projects-container {
     padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

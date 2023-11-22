@@ -37,7 +37,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis" onclick="handleClickViewMore(this)">
             <h2>Romanski </h2>
-            <h3>Graphiste et plasticien.</h3>
+            <h3 id="h3_avis">Graphiste et plasticien.</h3>
             <p>
               « J'ai fait appel aux services de Créa-Tech et je dois dire que je
               n'ai pas été déçu, un suivi personnalisé et dédié, une grande
@@ -52,7 +52,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis">
             <h2>Philippe </h2>
-            <h3>Formateur dans la sécurité en entreprise.</h3>
+            <h3 id="h3_avis" >Formateur dans la sécurité en entreprise.</h3 >
             <p>
               « Très à l'écoute de mes besoins, Créa-tech a très bien compris et
               répondu à ma demande, le site a été réalisé comme je le souhaitais
@@ -64,7 +64,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis">
             <h2>Jean-Pascal</h2>
-            <h3>
+            <h3 id="h3_avis">
               Directeur Général de Transition secteur énergie-environnement.
             </h3>
             <p>
@@ -81,7 +81,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis">
             <h2>Déborah</h2>
-            <h3>Pâtissière.</h3>
+            <h3 id="h3_avis">Pâtissière.</h3>
             <p>
               « C'est avec grand plaisir que j'ai eu l'occasion de travailler
               avec Cathy. Son amabilité et sa souplesse ont été incontournables
@@ -100,7 +100,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis">
             <h2>Angélique</h2>
-            <h3>Graphiste.</h3>
+            <h3 id="h3_avis">Graphiste.</h3>
             <p>
               « J'ai suivi la formation aux réseaux sociaux ainsi que la
               formation Wordpress. J'ai beaucoup appris grâce à Créa-tech. J'ai
@@ -112,7 +112,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis">
             <h2>Varthan</h2>
-            <h3>Traiteur à domicile.</h3>
+            <h3 id="h3_avis">Traiteur à domicile.</h3>
             <p>
               « J'ai suivi la formation "Réseaux sociaux" de Crea-Tech . J'ai
               beaucoup apprécié les divers ateliers mais également la patience
@@ -123,7 +123,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis">
             <h2>Sylviane</h2>
-            <h3>Retraitée</h3>
+            <h3 id="h3_avis">Retraitée</h3>
             <p>
               « J'ai participé à plusieurs ateliers sur le numérique animés par
               Cathy et ce fût à chaque fois un véritable plaisir. J'ai apprécié
@@ -135,7 +135,7 @@ const Avis = () => {
         <SwiperSlide className="slide_container">
           <div className="slide-avis">
             <h2>Nanny McChlo</h2>
-            <h3>Professeure particulier d'anglais</h3>
+            <h3 id="h3_avis">Professeure particulier d'anglais</h3>
             <p>
               « Grâce à l'atelier sur les réseaux sociaux, je peux maintenant
               gérer ma page pro sans problème. Un atelier très complet avec une

@@ -7,12 +7,12 @@ class A_propos extends Component {
     return (
       <Fragment>
         <section id="about" className="about">
-          <div className="container">
-            <div className="section-title">
+          <div className="about_container">
+            <div className="about_title">
               <h2>Qui sommes-nous ?</h2>
             </div>
 
-            <div className="content">
+            <div className="about_content">
               <div className="paragrapheAbout">
                 <p>
                   Chez <b>Créa-tech</b>, nous créons des <b>sites Internet</b> pour <b>les
@@ -49,7 +49,7 @@ class A_propos extends Component {
                   </li>
                   <br />
                 </ul>
-                <button className="btn">
+                <button className="btn" id="btn_about">
                   {" "}
                   <a href="#contact">
                     <span>Créons ensemble votre site web</span>

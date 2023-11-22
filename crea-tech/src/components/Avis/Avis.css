@@ -2,14 +2,17 @@
 /* Style du carrousel  */
 
 /* Styles pour le conteneur principal */
-.container {
+#avis {
   text-align: center;
   padding: 4px;
 }
 
+.heading{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 /* Styles pour chaque slide */
 .slide_container {
-  width: auto;
   margin-left: 2px;
   justify-content: center;
   align-items: center;
@@ -17,7 +20,8 @@
 
 /* Styles pour le texte dans chaque slide */
 .slide-avis {
-  height: 300px;
+  width: auto;
+  height: 250px;
   margin-top: 2rem;
   box-shadow: -0.5em 0.5em 0.4em #722375b0;
   border-radius: 3rem;
@@ -42,11 +46,6 @@
   justify-content: center;
   margin-top: 120px;
 }
-
-/* .slider-controler .swiper-button-prev,
-.slider-controler .swiper-button-next {
-  margin: 0 40rem;
-} */
 
 .slider-controler .swiper-button-prev img {
   margin-left: 80rem;
@@ -82,13 +81,8 @@
   visibility: hidden;
 }
 
-/* Styles responsives */
-@media (max-width: 768px) {
-  .swiper_container {
-    height: 300px;
-  }
-
-  .slide_container {
-    margin: 0 5px;
-  }
+#h3_avis{
+  margin: auto;
 }
+/* Styles responsives */
+
