@@ -58,21 +58,23 @@ const Header = () => {
         <ul className={menuOpen ? "open" : ""}>
           <div className="Nav-links">
             <ul>
-              <li className={activeSection === "accueil" ? "active" : ""}>
+              <li id="accueil_link"
+                className={activeSection === "accueil" ? "active_burger" : ""}
+              >
                 <a href="#accueil">Accueil</a>
               </li>
-              <li className={activeSection === "services" ? "active" : ""}>
+              <li id="services_link" className={activeSection === "services" ? "active_burger" : ""}>
                 <a href="#services">Services</a>
               </li>
-              <li className={activeSection === "about" ? "active" : ""}>
+              <li id="about_link" className={activeSection === "about" ? "active_burger" : ""}>
                 <a href="#about">A Propos</a>
               </li>
-              <li
-                className={activeSection === "projects-title" ? "active" : ""}
+              <li  id="projects_link"
+                className={activeSection === "projects-title" ? "active_burger" : ""}
               >
                 <a href="#avis">Avis</a>
               </li>
-              <li className={activeSection === "contact" ? "active" : ""}>
+              <li id="contact_link" className={activeSection === "contact" ? "active_burger" : ""}>
                 <a href="#contact">Contact</a>
               </li>
             </ul>

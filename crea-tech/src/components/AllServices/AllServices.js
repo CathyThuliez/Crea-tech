@@ -15,7 +15,6 @@ const AllServices = () => {
           <Services3 />
         </div>
       </section>
-      <div className="section-separator"></div>
     </Fragment>
   );
 };

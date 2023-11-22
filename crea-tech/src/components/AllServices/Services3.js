@@ -11,7 +11,7 @@ import RS from "../images/ICON_SERVICES/icons8-bavarder-100.png";
 
 const Product = ({ imgSrc, title, description, onClick, isActive }) => {
   return (
-    <div className={`bloc ${isActive ? "active" : ""}`} onClick={onClick}>
+    <div className={`bloc ${isActive ? "actived" : ""}`} onClick={onClick}>
       <div className="bloc-haut">
         <button className="see-more"></button>
         <div className="rond">
@@ -69,16 +69,6 @@ const Services = () => {
     },
   ];
 
-  const handleClick = (index) => {
-    setActiveProduct((prevIndex) => (prevIndex === index ? null : index));
-
-    const containers = document.querySelectorAll(".container");
-    containers.forEach((container, i) => {
-      if (i > index) {
-        container.style.marginTop = activeProduct === null ? "0" : "200px"; // Ajuster la marge du bloc suivant
-      }
-    });
-  };
   const handleProductClick = (index) => {
     if (activeProduct === index) {
       setActiveProduct(null); // Ferme la div si elle est déjà ouverte
@@ -98,10 +88,11 @@ const Services = () => {
             title={product.title}
             description={product.description}
             isActive={activeProduct === index}
-            onClick={() => handleProductClick(index) && handleClick(index)}
+            onClick={() => handleProductClick(index)}
           />
         ))}
       </div>
+      <div className="section-separator"></div>
     </Fragment>
   );
 };

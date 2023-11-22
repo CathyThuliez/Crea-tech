@@ -40,11 +40,13 @@ section {
 
 #first_container {
   margin-top: 10px;
+  z-index: 1;
 }
 
 #second_container {
   margin-left: 500px;
   margin-top: -513px;
+  z-index: 1000;
 }
 
 #third_container {
@@ -83,7 +85,7 @@ section {
   margin-left: 300px;
 }
 
-.active {
+.actived {
   flex-grow: 1;
   height: 250px;
 }
@@ -126,7 +128,7 @@ section {
 @media screen and (min-width: 320px) and (max-width: 360px) {
   .first_services_title {
     margin-left: -0.6vw;
-    margin-top: -8.5vw;
+    margin-top: -18vw;
   }
 
   #first_container {
@@ -135,26 +137,26 @@ section {
 
   .second_services_title {
     margin-left: 9vw;
-    margin-top: -45vw;
+    margin-top: -8vw;
   }
 
   #second_container {
     margin-left: -0.9vw;
-    margin-top: -30vw;
+    margin-top: -0.1vw;
   }
 
   .third_services_title {
     margin-left: 9vw;
-    margin-top: -20vw;
+    margin-top: -10vw;
   }
 
   #third_container {
     margin-left: -0.9vw;
-    margin-top: -2vw;
+    margin-top: -0.1vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
@@ -170,26 +172,26 @@ section {
 
   .second_services_title {
     margin-left: 13.5vw;
-    margin-top: -45vw;
+    margin-top: -7vw;
   }
 
   #second_container {
     margin-left: 2.5vw;
-    margin-top: -30vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 13.5vw;
-    margin-top: -20vw;
+    margin-top: -4vw;
   }
 
   #third_container {
     margin-left: 2.5vw;
-    margin-top: -2vw;
+    margin-top: 10vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
@@ -205,33 +207,33 @@ section {
 
   .second_services_title {
     margin-left: 13.5vw;
-    margin-top: -40vw;
+    margin-top: -5vw;
   }
 
   #second_container {
     margin-left: 5vw;
-    margin-top: -28vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 15vw;
-    margin-top: -20vw;
+    margin-top: -5vw;
   }
 
   #third_container {
     margin-left: 5vw;
-    margin-top: -9vw;
+    margin-top: 5vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
 @media screen and (min-width: 413px) and (max-width: 414px) {
   .first_services_title {
     margin-left: -0.6vw;
-    margin-top: -8.5vw;
+    margin-top: -9.5vw;
   }
 
   #first_container {
@@ -240,33 +242,33 @@ section {
 
   .second_services_title {
     margin-left: 13.5vw;
-    margin-top: -40vw;
+    margin-top: -5vw;
   }
 
   #second_container {
     margin-left: 5vw;
-    margin-top: -28vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 15vw;
-    margin-top: -20vw;
+    margin-top: -5vw;
   }
 
   #third_container {
     margin-left: 5vw;
-    margin-top: -9vw;
+    margin-top: 5vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
 @media screen and (min-width: 415px) and (max-width: 428px) {
   .first_services_title {
     margin-left: -0.6vw;
-    margin-top: -8.5vw;
+    margin-top: -9.5vw;
   }
 
   #first_container {
@@ -275,26 +277,26 @@ section {
 
   .second_services_title {
     margin-left: 15.5vw;
-    margin-top: -40vw;
+    margin-top: -5vw;
   }
 
   #second_container {
     margin-left: 7.5vw;
-    margin-top: -28vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 15.5vw;
-    margin-top: -20vw;
+    margin-top: -5vw;
   }
 
   #third_container {
     margin-left: 8vw;
-    margin-top: -9vw;
+    margin-top: 5vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
@@ -310,26 +312,26 @@ section {
 
   .second_services_title {
     margin-left: 30vw;
-    margin-top: -20vw;
+    margin-top: -1vw;
   }
 
   #second_container {
     margin-left: 25vw;
-    margin-top: -12vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 30vw;
-    margin-top: -10vw;
+    margin-top: -1vw;
   }
 
   #third_container {
     margin-left: 25vw;
-    margin-top: -4vw;
+    margin-top: 5vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
@@ -345,26 +347,26 @@ section {
 
   .second_services_title {
     margin-left: 32vw;
-    margin-top: -20vw;
+    margin-top: -1vw;
   }
 
   #second_container {
     margin-left: 27.5vw;
-    margin-top: -12vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 30vw;
-    margin-top: -10vw;
+    margin-top: -1vw;
   }
 
   #third_container {
     margin-left: 27.5vw;
-    margin-top: -4vw;
+    margin-top: 5vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
@@ -380,28 +382,26 @@ section {
 
   .second_services_title {
     margin-left: 32vw;
-    margin-top: -20vw;
+    margin-top: -1vw;
   }
 
   #second_container {
     margin-left: 27.5vw;
-    margin-top: -12vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 30vw;
-    margin-top: -10vw;
+    margin-top: -1vw;
   }
 
   #third_container {
     margin-left: 27.5vw;
-    margin-top: -4vw;
-    position: relative;
-    z-index: 1;
+    margin-top: 5vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
@@ -417,26 +417,26 @@ section {
 
   .second_services_title {
     margin-left: 33vw;
-    margin-top: -18vw;
+    margin-top: -1vw;
   }
 
   #second_container {
     margin-left: 28.5vw;
-    margin-top: -12vw;
+    margin-top: 5vw;
   }
 
   .third_services_title {
     margin-left: 33vw;
-    margin-top: -8vw;
+    margin-top: -1vw;
   }
 
   #third_container {
     margin-left: 28vw;
-    margin-top: -3vw;
+    margin-top: 5vw;
   }
 
   .section-separator {
-    display: none;
+    margin-top: -10vw;
   }
 }
 
@@ -463,9 +463,5 @@ section {
 
   #third_container {
     margin-left: 65vw;
-  }
-
-  .section-separator {
-    display: none;
   }
 }
