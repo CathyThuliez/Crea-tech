@@ -11,7 +11,6 @@ import RS from "../images/ICON_SERVICES/icons8-bavarder-100.png";
 const Product = ({ imgSrc, title, description, onClick, isActive }) => {
   return (
     <div className={`bloc ${isActive ? "actived" : ""}`} onClick={onClick}>
-    <div className={`bloc ${isActive ? "actived" : ""}`} onClick={onClick}>
       <div className="bloc-haut">
         <button className="see-more"></button>
         <div className="rond">

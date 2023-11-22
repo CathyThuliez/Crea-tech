@@ -75,9 +75,9 @@ const Contact = () => {
               <option value={""} hidden>
                 Choisir une option
               </option>
-              <option value={"wordpress"}>Wordpress</option>
-              <option value={"formation"}>Formation</option>
               <option value={"website"}>Création de site</option>
+              <option value={"formation"}>Initation au numérique</option>
+              <option value={"reparation"}>Réparation et entretien informatique</option>
               <option value={"Autre"}>Autre (préciser dans le message)</option>
             </select>
           </label>

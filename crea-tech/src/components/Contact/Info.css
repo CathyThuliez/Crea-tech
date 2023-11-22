@@ -1,45 +1,49 @@
+/* Style des infos de la page Contact */
+
 .contact-info {
-    font-size: large;
-    transition: transform 0.3s;
-    margin-left: 10rem;
+  transition: transform 0.3s;
+  margin-bottom: 1em;
+  animation: bounce 0.35s ease infinite alternate;
+  display: inline-flex;
+  margin-left: 50px;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 .contact-info:hover {
-    transform: translateY(0.5em);
-    transition: 0.5s;
+  transform: translateY(0.5em);
+  transition: 0.5s;
 }
 
 .contact-description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #722375;
-    border: 1px solid pink;
-    border-radius: 10px;
-    box-shadow: -0.5em 0.5em 0.4em pink;
-    padding: 0.625rem;
-    position: absolute;
-    top: 0.5rem;
-    left: 2rem;
-    transform: translateY(120%);
-    width: 15rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: #722375;
+  border: 1px solid pink;
+  border-radius: 10px;
+  box-shadow: -0.5em 0.5em 0.4em pink;
+  padding: 0.625rem;
+  position: absolute;
+  margin-top: em;
+  margin-left: -5.5rem;
+  transform: translateY(120%);
+  width: 15rem;
 }
 
 .contact:hover .contact-description {
-    justify-content: center;
-    color: pink;
-    opacity: 1;
-    visibility: visible;
+  justify-content: center;
+  color: pink;
+  opacity: 1;
+  visibility: visible;
 }
 
-.contacts-page{
-    width: 10rem;
-}
-
-.logo-contact{
-    zoom: 2;
+.logo-contact {
+  width: 40px;
 }

@@ -1,11 +1,8 @@
 /* CONTACT
 /* Style de base pour la page contact */
 
-section.contact {
-  padding-top: 6rem;
-  height: 85vh;
-  width: auto;
-  margin-top: 3rem;
+#contact {
+  margin-bottom: 5em;
 }
 
 .text-contact {
@@ -22,9 +19,8 @@ section.contact {
 }
 
 .form {
-  position: absolute;
-  right: 15rem;
-  top: 245rem;
+  margin-left: 50em;
+  margin-top: -30em;
 }
 
 .form input,
