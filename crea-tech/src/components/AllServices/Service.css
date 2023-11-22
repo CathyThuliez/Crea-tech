@@ -12,10 +12,11 @@
 #services {
   margin-bottom: 5rem;
   width: 100%;
+  zoom: 0.9;
 }
 
 .first_services_title {
-  margin-left: 4.8rem;
+  margin-left: 6.5rem;
   width: 300px;
   margin-top: 1em;
   font-size: 20px;
@@ -24,14 +25,14 @@
 .second_services_title {
   position: absolute;
   margin-top: -34.7rem;
-  margin-left: 35rem;
+  margin-left: 38.6rem;
   font-size: 20px;
 }
 
 .third_services_title {
   position: absolute;
   margin-top: -34.5rem;
-  margin-left: 59rem;
+  margin-left: 64.5rem;
   font-size: 20px;
 }
 
@@ -45,17 +46,18 @@
 
 #first_container {
   margin-top: 10px;
+  margin-left: 5em;
   z-index: 1;
 }
 
 #second_container {
-  margin-left: 500px;
+  margin-left: 35em;
   margin-top: -513px;
   z-index: 1000;
 }
 
 #third_container {
-  margin-left: 950px;
+  margin-left: 65em;
   margin-top: -510px;
 }
 

@@ -5,11 +5,13 @@
 #avis {
   text-align: center;
   padding: 4px;
+  zoom: 0.7;
 }
 
 .heading {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-size: 30px;
 }
 /* Styles pour chaque slide */
 
