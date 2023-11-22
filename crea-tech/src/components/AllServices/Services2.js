@@ -81,7 +81,7 @@ const Services = () => {
             title={product.title}
             description={product.description}
             isActive={activeProduct === index}
-            onClick={() => handleProductClick(index) && handleClick(index)}
+            onClick={() => handleProductClick(index)}
           />
         ))}
       </div>

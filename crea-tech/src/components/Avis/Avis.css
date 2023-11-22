@@ -7,36 +7,36 @@
   padding: 4px;
 }
 
-.heading{
+.heading {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 /* Styles pour chaque slide */
-.slide_container {
-  margin-left: 2px;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Styles pour le texte dans chaque slide */
 .slide-avis {
+  position: relative;
   width: auto;
-  height: 250px;
+  height: 225px;
   margin-top: 2rem;
   box-shadow: -0.5em 0.5em 0.4em #722375b0;
   border-radius: 3rem;
   padding: 5px;
   margin: 15px;
-  overflow: auto;
+  overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+.toggle-button {
+  color: #722375;
+  background-color: #fff;
+  border-width: 0;
+  margin-left: 24rem;
+  padding-top: -50px;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #722375c0;
-  border-radius: 10px;
+/* Style du bouton afficher plus  */
+.slide-avis.expanded {
+  height: auto;
 }
 
 /* Styles pour les flèches de navigation */
@@ -49,14 +49,14 @@
 
 .slider-controler .swiper-button-prev img {
   margin-left: 80rem;
-  margin-top: 22rem;
+  margin-top: 17rem;
   width: 60px;
   height: 60px;
 }
 
 .slider-controler .swiper-button-next img {
-  margin-right: 79rem;
-  margin-top: 22rem;
+  margin-right: 78.5rem;
+  margin-top: 17rem;
   width: 60px;
   height: 60px;
 }
@@ -81,8 +81,15 @@
   visibility: hidden;
 }
 
-#h3_avis{
+#h3_avis {
   margin: auto;
 }
-/* Styles responsives */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #722375c0;
+  border-radius: 10px;
+}
