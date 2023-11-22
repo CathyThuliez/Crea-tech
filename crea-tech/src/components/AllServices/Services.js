@@ -60,17 +60,6 @@ const Services = () => {
     },
   ];
 
-
-  const handleClick = (index) => {
-    setActiveProduct((prevIndex) => (prevIndex === index ? null : index));
-  
-    const containers = document.querySelectorAll('.service_container');
-    containers.forEach((container, i) => {
-      if (i > index) {
-        container.style.marginTop = activeProduct === null ? '0' : '200px'; // Ajuster la marge du bloc suivant
-      }
-    });
-  };
   const handleProductClick = (index) => {
     if (activeProduct === index) {
       setActiveProduct(null); // Ferme la div si elle est déjà ouverte
@@ -90,7 +79,7 @@ const Services = () => {
             title={product.title}
             description={product.description}
             isActive={activeProduct === index}
-            onClick={() => handleProductClick(index) && handleClick(index)}
+            onClick={() => handleProductClick(index)}
           />
         ))}
       </div>

@@ -7,12 +7,12 @@ class A_propos extends Component {
     return (
       <Fragment>
         <section id="about" className="about">
-          <div className="about_container">
-            <div className="about_title">
+          <div className="container_about">
+            <div className="about-title">
               <h2>Qui sommes-nous ?</h2>
             </div>
 
-            <div className="about_content">
+            <div className="content_about">
               <div className="paragrapheAbout">
                 <p>
                   Chez <b>Créa-tech</b>, nous créons des <b>sites Internet</b> pour <b>les
