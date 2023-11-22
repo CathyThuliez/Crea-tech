@@ -22,9 +22,8 @@ section.contact {
 }
 
 .form {
-  position: absolute;
-  right: 15rem;
-  top: 245rem;
+  margin-left: 55rem;
+  margin-top: -28rem;
 }
 
 .form input,
@@ -42,4 +41,8 @@ select {
 label {
   color: #722375;
   font-weight: bold;
+}
+
+#btn-contact{
+  margin-right: 21.5rem;
 }
