@@ -37,7 +37,7 @@ const Services = () => {
       description:
         "Avec ou sans CMS, c’est le site idéal pour les personnes pressées qui souhaitent que le site soit terminé dans les plus brefs délais. Ce genre de site convient parfaitement aux personnes qui désirent montrer en quoi consiste leur activité.",
     },
-    
+
     {
       imgSrc: WordPress,
       title: "Site vitrine",
@@ -50,13 +50,12 @@ const Services = () => {
       title: "Site E-commerce",
       description:
         "Vous souhaitez développer votre activité en ligne ? Rien de tel qu’un site E-commerce ! Pour vous donner la meilleure expérience possible, nous utilisons le CMS WordPress couplé au module WooCommerce.",
-    },    
+    },
 
     {
       imgSrc: Smartphone,
       title: "Site Responsive",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit...",
+      description: "75% du trafic web est représenté par les smartphones. C'est pourquoi nous accordons une intentions très particulière à ce que votre site web soit consultable sur toutes les tailles d'écrans.",
     },
   ];
 

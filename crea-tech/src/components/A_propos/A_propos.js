@@ -59,7 +59,7 @@ class A_propos extends Component {
             </div>
           </div>
         </section>
-        <div className="section-separator"></div>
+        <div className="section-separator" id="about-separator"></div>
       </Fragment>
     );
   }

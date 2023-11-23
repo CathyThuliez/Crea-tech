@@ -134,7 +134,7 @@ const Avis = () => {
           </div>
           <div className="swiper-pagination"></div>
         </div>
-        <div className="section-separator"></div>
+        <div className="section-separator" id="avis-separator"></div>
       </Swiper>
     </div>
   );

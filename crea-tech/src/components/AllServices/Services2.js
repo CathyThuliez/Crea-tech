@@ -1,10 +1,9 @@
 import React, { Fragment, useState } from "react";
 import "../AllServices/Service.css";
-import WordPress from "../images/ICON_SERVICES/icons8-wordpress.svg";
-import Caddie from "../images/ICON_SERVICES/icons8-caddie-96.png";
-import Smartphone from "../images/ICON_SERVICES/icons8-smartphone-96.png";
-import Ordi from "../images/ICON_SERVICES/icons8-ordinateur-portable-96.png";
-import RS from "../images/ICON_SERVICES/icons8-bavarder-100.png";
+import Windows from "../images/ICON_SERVICES/icons8-windows-8-64.png";
+import Internet from "../images/ICON_SERVICES/icons8-internet-96.png";
+import Mail from "../images/ICON_SERVICES/icons8-courrier-96.png";
+import RS from "../images/ICON_SERVICES/icons8-instagram-96.png";
 
 // Composant Produit
 
@@ -33,33 +32,32 @@ const Services = () => {
   const [activeProduct, setActiveProduct] = useState(null);
   const products = [
     {
-      imgSrc: WordPress,
+      imgSrc: Windows,
       title: "Windows",
       description:
-        "Site créé avec le CMS WordPress et le thème de votre choix ou from scratch. C’est la meilleure façon de montrer votre travail sur plusieurs pages. Nous nous chargeons, bien entendu, de vous former afin que vous puissiez faire d’éventuelles modifications en toute sérénité.",
+        "Comprendre chaque partie du panneau de configuration et Apprendre à utiliser la barre de recherche de Windows, épingler les outils à la barre des tâches, utiliser les divers répertoires, créer, copier-coller, déplacer, renommer et supprimer un dossier et un fichier. Apprendre à Télécharger un logiciel et l’installer",
     },
 
     {
-      imgSrc: Caddie,
+      imgSrc: Internet,
       title: "Internet",
       description:
-        "Vous souhaitez développer votre activité en ligne ? Rien de tel qu’un site E-commerce ! Pour vous donner la meilleure expérience possible, nous utilisons le CMS WordPress couplé au module WooCommerce.",
+        "Comprendre les bases : définition des termes utiles. Comprendre le fonctionnement des moteurs de recherches et les astuces pour trouver plus rapidement. Comprendre le fonctionnement d’un navigateur",
     },
 
     {
-      imgSrc: Smartphone,
+      imgSrc: Mail,
       title: "Messagerie",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit...",
+        "Créer une adresse mail et configurer la boite de messagerie. Gérer ses contacts et ses mails. Écrire un mail et l’envoyer, ouvrir un mail. Ouvrir et télécharger une pièce jointe, ajouter une pièce jointe",
     },
 
     {
-      imgSrc: Ordi,
-      title: "RS",
+      imgSrc: RS,
+      title: "Réseaux sociaux",
       description:
-        "Avec ou sans CMS, c’est le site idéal pour les personnes pressées qui souhaitent que le site soit terminé dans les plus brefs délais. Ce genre de site convient parfaitement aux personnes qui désirent montrer en quoi consiste leur activité.",
+        "Facebook, Instagram, Linkedin: Apprenez à reconnaître et utiliser les différentes section. Apprendre à paramétrer son compte (renseigner le profil, choisir entre le mode public ou le mode privé, etc). Apprendre à poster des photos (retouche, utilisation des filtres…). Transformer un simple compte en compte professionnel",
     },
-
   ];
 
   const handleProductClick = (index) => {

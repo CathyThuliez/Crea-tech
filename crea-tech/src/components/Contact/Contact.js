@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Info from "./Info";
-import "./Contact.css"
+import "./Contact.css";
 
 const Contact = () => {
   return (
@@ -25,7 +25,7 @@ const Contact = () => {
       </div>
       <div className="form">
         <form className="contact-form">
-          <label>
+          <label className="form-label">
             Nom
             <input
               className="form-name"
@@ -37,7 +37,7 @@ const Contact = () => {
             />
           </label>
 
-          <label>
+          <label className="form-label">
             Prénom
             <input
               className="form-firstname"
@@ -49,7 +49,7 @@ const Contact = () => {
             />
           </label>
 
-          <label>
+          <label className="form-label">
             E-mail
             <input
               className="form-eamil"
@@ -63,7 +63,7 @@ const Contact = () => {
             />
           </label>
 
-          <label>
+          <label className="form-label">
             Sujet
             <select
               className="form-sujet"
@@ -77,18 +77,20 @@ const Contact = () => {
               </option>
               <option value={"website"}>Création de site</option>
               <option value={"formation"}>Initation au numérique</option>
-              <option value={"reparation"}>Réparation et entretien informatique</option>
+              <option value={"reparation"}>
+                Réparation et entretien informatique
+              </option>
               <option value={"Autre"}>Autre (préciser dans le message)</option>
             </select>
           </label>
 
-          <label>
+          <label className="form-label">
             Sélectionner un fichier
             <input className="form-file" id="file" name="file" type="file" />
           </label>
 
-          <label>
-            Un commentaire ? Une précision ? Dites-nous tout
+          <label className="form-label">
+            Un commentaire ? Une précision ?
             <textarea
               className="form-message"
               id="message"
