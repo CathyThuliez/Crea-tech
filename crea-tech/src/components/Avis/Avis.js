@@ -84,7 +84,7 @@ const Avis = () => {
   };
 
   return (
-    <div className="container" id="avis">
+    <section className="container" id="Avis">
       <h2 className="heading">Les avis de nos clients</h2>
       <Swiper
         effect="fade"
@@ -134,9 +134,9 @@ const Avis = () => {
           </div>
           <div className="swiper-pagination"></div>
         </div>
-        <div className="section-separator"></div>
+        <div className="section-separator" id="avis-separator"></div>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

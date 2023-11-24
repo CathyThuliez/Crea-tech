@@ -16,8 +16,8 @@ const Header = () => {
         const sectionHeight = section.clientHeight;
 
         if (
-          window.scrollY >= sectionTop &&
-          window.scrollY < sectionTop + sectionHeight
+          window.scrollY + window.innerHeight / 2 >= sectionTop &&
+          window.scrollY + window.innerHeight / 2 < sectionTop + sectionHeight
         ) {
           setActiveSection(section.getAttribute("id"));
         }
@@ -58,24 +58,60 @@ const Header = () => {
         <ul className={menuOpen ? "open" : ""}>
           <div className="Nav-links">
             <ul>
-              <li id="accueil_link"
+              <li
+                id="accueil_link"
                 className={activeSection === "accueil" ? "active_burger" : ""}
               >
-                <a href="#accueil">Accueil</a>
+                <a
+                  href="#accueil"
+                  onClick={(e) => handleLinkClick(e, "accueil")}
+                >
+                  Accueil
+                </a>
               </li>
-              <li id="services_link" className={activeSection === "services" ? "active_burger" : ""}>
-                <a href="#services">Services</a>
-              </li>
-              <li id="about_link" className={activeSection === "about" ? "active_burger" : ""}>
-                <a href="#about">A Propos</a>
-              </li>
-              <li  id="projects_link"
-                className={activeSection === "projects-title" ? "active_burger" : ""}
+              <li
+                id="services_link"
+                className={activeSection === "services" ? "active_burger" : ""}
               >
-                <a href="#avis">Avis</a>
+                <a
+                  href="#services"
+                  onClick={(e) => handleLinkClick(e, "services")}
+                >
+                  Services
+                </a>
               </li>
-              <li id="contact_link" className={activeSection === "contact" ? "active_burger" : ""}>
-                <a href="#contact">Contact</a>
+              <li
+                id="about_link"
+                className={activeSection === "about" ? "active_burger" : ""}
+              >
+                <a 
+                  href="#about" 
+                  onClick={(e) => handleLinkClick(e, "about")}
+                >
+                  A Propos
+                </a>
+              </li>
+              <li
+                id="Avis_link"
+                className={activeSection === "Avis" ? "active_burger" : ""}
+              >
+                <a 
+                  href="#avis" 
+                  onClick={(e) => handleLinkClick(e, "Avis")}
+                >
+                  Avis
+                </a>
+              </li>
+              <li
+                id="Contact_link"
+                className={activeSection === "Contact" ? "active_burger" : ""}
+              >
+                <a
+                  href="#Contact"
+                  onClick={(e) => handleLinkClick(e, "Contact")}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -85,11 +121,10 @@ const Header = () => {
   );
 };
 
-export default Header;
+const handleLinkClick = (e, sectionId) => {
+  e.preventDefault();
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: "smooth", block: "center" });
+};
 
-// <div className="contact_Header">
-// <a href="#contact">
-//   contact@crea-tech.fr{" "}
-//   <p className="number_Header">06 42 14 03 29</p>
-// </a>
-// </div>
+export default Header;

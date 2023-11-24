@@ -85,7 +85,7 @@ const Services = () => {
           />
         ))}
       </div>
-      <div className="section-separator"></div>
+      <div className="section-separator" id="service-separator"></div>
     </Fragment>
   );
 };

@@ -51,7 +51,7 @@ class A_propos extends Component {
                 </ul>
                 <button className="btn" id="btn_about">
                   {" "}
-                  <a href="#contact">
+                  <a href="#Contact">
                     <span>Créons ensemble votre site web</span>
                   </a>
                 </button>
@@ -59,7 +59,7 @@ class A_propos extends Component {
             </div>
           </div>
         </section>
-        <div className="section-separator"></div>
+        <div className="section-separator" id="about-separator"></div>
       </Fragment>
     );
   }

@@ -6,13 +6,15 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  height: auto;
-  width: auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
 h2,
-h3, 
+h3,
 b {
   text-align: center;
   color: #722375;
@@ -74,31 +76,6 @@ b {
   opacity: 1;
 }
 
-@media (maw-width: 480px){
-  html{
-    width: 100%;
-    height: auto;
-  };
-}
-
-@media (min-width: 1440px) {
-  html {
-    zoom: 1.2;
-  }
-}
-
-@media (min-width: 2560px) {
-  html {
-    zoom: 1.7;
-  }
-}
-
-@media (min-width: 3860px) {
-  html {
-    zoom: 2.5;
-  }
-}
-
 a {
   color: #fff;
 }
@@ -108,4 +85,3 @@ a:hover {
   color: pink;
   transition: 0.3s;
 }
-

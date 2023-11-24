@@ -17,7 +17,7 @@ class Accueil extends Component {
           </div>
           <div>
             <button className="btn" id="btn_accueil">
-              <a href="#contact">
+              <a href="#Contact">
                 <span>Une idée de site ? Parlez-en ici</span>
               </a>
             </button>
