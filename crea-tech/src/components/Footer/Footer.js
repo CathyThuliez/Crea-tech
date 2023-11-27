@@ -2,6 +2,8 @@ import "./Footer.css";
 import React, { Component } from "react";
 import Facebook from "../images/ICON_FOOTER/facebook-logo.png";
 import Instagram from "../images/ICON_FOOTER/instagram-logo.png";
+import { Route } from "react-router-dom";
+import MentionLegale from "../MentionLegale/MentionLegale";
 
 class Footer extends Component {
   render() {
@@ -12,9 +14,12 @@ class Footer extends Component {
             <p className="footer-contact">Contactez moi</p>
           </a>
           <div className="footer-legal-mention">
-            <a href="#">
+            <Route
+              path="../MentionLegale/MentionLegale.js"
+              component={MentionLegale}
+            >
               <p className="footer-notice">Mention légales</p>
-            </a>
+            </Route>
             <a href="#">
               <p className="footer-copyright">Copyright</p>
             </a>
