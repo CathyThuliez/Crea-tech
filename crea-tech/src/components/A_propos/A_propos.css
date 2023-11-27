@@ -8,7 +8,7 @@
   height: 100vh;
   width: auto;
   display: flex;
-  zoom: 0.9;
+  /* zoom: 0.9; */
 }
 
 .about_title {
@@ -50,6 +50,7 @@
   #about {
     margin-top: 23rem;
     margin-bottom: -8rem;
+    zoom: 0.9;
   }
 
   .content_about {
@@ -82,6 +83,7 @@
   #about {
     margin-top: 22rem;
     margin-bottom: 2rem;
+    zoom: 0.9;
   }
 
   .content_about {

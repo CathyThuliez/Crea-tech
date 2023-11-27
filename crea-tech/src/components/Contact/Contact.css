@@ -1,9 +1,9 @@
 /* CONTACT
 /* Style de base pour la page contact */
 
-#contact {
+#Contact {
   margin-bottom: 5em;
-  zoom: 0.9;
+  /* zoom: 0.9; */
 }
 
 .text-contact {
@@ -52,12 +52,14 @@ label {
     width: 80%;
     margin-left: 3em;
     margin-top: -5em;
+    zoom: 0.9;
   }
 
   .form {
     margin-left: 0;
     margin-top: -2em;
     width: 80%;
+    zoom: 0.9;
   }
 
   .form input,

@@ -51,7 +51,7 @@ class A_propos extends Component {
                 </ul>
                 <button className="btn" id="btn_about">
                   {" "}
-                  <a href="#contact">
+                  <a href="#Contact">
                     <span>Créons ensemble votre site web</span>
                   </a>
                 </button>

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { Fragment }, { useState } from "react";
 import Info from "./Info";
 import "./Contact.css";
 import axios from "axios";
@@ -21,43 +21,44 @@ const Contact = () => {
       });
   };
   return (
-    <section id="contact" class="contact">
-      <div className="contact-title">
-        <h2>Contact</h2>
-      </div>
-      <div className="text-contact">
-        <p>
-          Vous avez un <b>site à réaliser ?</b>
-        </p>
-        <p>
-          <b>Une question</b>, ou tout simplement besoin d'un renseignement ?
-        </p>
-        <p>
-          <b>N'hésitez pas et contactez-nous.</b>{" "}
-        </p>
-        <div className="info">
-          <Info />
+    <Fragment>
+      <section id="Contact" class="contact">
+        <div className="contact-title">
+          <h2>Contact</h2>
         </div>
-      </div>
-      <div className="form">
-        <form
+        <div className="text-contact">
+          <p>
+            Vous avez un <b>site à réaliser ?</b>
+          </p>
+          <p>
+            <b>Une question</b>, ou tout simplement besoin d'un renseignement ?
+          </p>
+          <p>
+            <b>N'hésitez pas et contactez-nous.</b>{" "}
+          </p>
+          <div className="info">
+            <Info />
+          </div>
+        </div>
+        <div className="form">
+          <form
           className="contact-form"
           action=""
           method="post"
           onSubmit={handleSubmit}
         >
-          <label className="form-label" htmlFor="name">
-            Nom
-            <input
-              className="form-name"
-              id="name"
-              name="name"
-              placeholder="Magination"
-              type="text"
-              required
-      
+            <label className="form-label" htmlFor="name">
+              Nom
+              <input
+                className="form-name"
+                id="name"
+                name="name"
+                placeholder="Magination"
+                type="text"
+                required
+        
             />
-          </label>
+            </label>
 
           <label className="form-label" htmlFor="firstname">
             Prénom

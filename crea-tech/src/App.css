@@ -8,6 +8,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -81,4 +85,3 @@ a:hover {
   color: pink;
   transition: 0.3s;
 }
-

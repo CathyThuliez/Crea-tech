@@ -2,10 +2,10 @@
 /* Style du carrousel  */
 
 /* Styles pour le conteneur principal */
-#avis {
+#Avis {
   text-align: center;
   padding: 4px;
-  zoom: 0.7;
+  /* zoom: 0.7; */
 }
 
 .heading {
@@ -101,6 +101,7 @@
 @media screen and (min-width: 320px) and (max-width: 360px) {
   .swiper_container {
     width: 95rem;
+    zoom: 0.7;
   }
 
   .swiper-pagination {

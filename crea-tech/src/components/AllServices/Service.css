@@ -12,7 +12,7 @@
 #services {
   margin-bottom: 5rem;
   width: 100%;
-  zoom: 0.9;
+  /* zoom: 0.9; */
 }
 
 .first_services_title {
@@ -135,35 +135,42 @@
     margin-left: 12vw;
     margin-top: 30vw;
     width: 300px;
+    zoom: 0.9;
   }
 
   #first_container {
     margin-left: 5vw;
+    zoom: 0.9;
   }
 
   .second_services_title {
     margin-left: 20vw;
     margin-top: -5vw;
+    zoom: 0.9;
   }
 
   #second_container {
     margin-left: 5vw;
     margin-top: 8vw;
+    zoom: 0.9;
   }
 
   .third_services_title {
     margin-left: 2vw;
     margin-top: -4vw;
+    zoom: 0.9;
   }
 
   #third_container {
     margin-left: 5vw;
     margin-top: 2em;
+    zoom: 0.9;
   }
 
   #service-separator {
     margin-top: -8vw;
     margin-left: 27vw;
+    zoom: 0.9;
   }
 }
 
