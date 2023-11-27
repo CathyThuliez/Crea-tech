@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment }, { useState } from "react";
+import React, { Fragment , useState } from "react";
 import Info from "./Info";
 import "./Contact.css";
 import axios from "axios";
@@ -133,6 +133,7 @@ const Contact = () => {
         </form>
       </div>
     </section>
+    </Fragment>
   );
 };
 export default Contact;

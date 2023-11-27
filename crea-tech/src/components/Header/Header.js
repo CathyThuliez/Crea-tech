@@ -84,10 +84,7 @@ const Header = () => {
                 id="about_link"
                 className={activeSection === "about" ? "active_burger" : ""}
               >
-                <a 
-                  href="#about" 
-                  onClick={(e) => handleLinkClick(e, "about")}
-                >
+                <a href="#about" onClick={(e) => handleLinkClick(e, "about")}>
                   A Propos
                 </a>
               </li>
@@ -95,10 +92,7 @@ const Header = () => {
                 id="Avis_link"
                 className={activeSection === "Avis" ? "active_burger" : ""}
               >
-                <a 
-                  href="#avis" 
-                  onClick={(e) => handleLinkClick(e, "Avis")}
-                >
+                <a href="#avis" onClick={(e) => handleLinkClick(e, "Avis")}>
                   Avis
                 </a>
               </li>
