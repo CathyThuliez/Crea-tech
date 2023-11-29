@@ -2,10 +2,10 @@ import "./Footer.css";
 import React, { Component } from "react";
 import Facebook from "../images/ICON_FOOTER/facebook-logo.png";
 import Instagram from "../images/ICON_FOOTER/instagram-logo.png";
-import { Route } from "react-router-dom";
-import MentionLegale from "../MentionLegale/MentionLegale";
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
+
   render() {
     return (
       <footer>
@@ -14,12 +14,14 @@ class Footer extends Component {
             <p className="footer-contact">Contactez moi</p>
           </a>
           <div className="footer-legal-mention">
-            <Route
-              path="../MentionLegale/MentionLegale.js"
-              component={MentionLegale}
+            <Link
+              to="/mentionlegales"
+              target="_blank"
+              rel=""
             >
-              <p className="footer-notice">Mention légales</p>
-            </Route>
+              <p> Mention légales</p>
+            </Link>
+
             <a href="#">
               <p className="footer-copyright">Copyright</p>
             </a>

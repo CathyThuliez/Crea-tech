@@ -43,9 +43,9 @@ const Services = () => {
       imgSrc: Caddie,
       title: "Site E-commerce",
       description:
-        "Vous souhaitez développer votre activité en ligne ? Rien de tel qu’un site E-commerce ! Pour vous donner la meilleure expérience possible, nous utilisons le CMS WordPress couplé au module WooCommerce.",
-    },
-
+      "Vous souhaitez développer votre activité en ligne ? Rien de tel qu’un site E-commerce ! Pour vous donner la meilleure expérience possible, nous utilisons le CMS WordPress couplé au module WooCommerce.",
+    },    
+    
     {
       imgSrc: Smartphone,
       title: "Service 4",
