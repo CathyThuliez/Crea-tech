@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable react/jsx-pascal-case */
 import "./App.css";
 import A_propos from "./components/A_propos/A_propos";
 import Accueil from "./components/Accueil/Accueil";
@@ -8,23 +6,34 @@ import Header from "./components/Header/Header";
 import AllServices from "./components/AllServices/AllServices";
 import Contact from "./components/Contact/Contact";
 import Avis from "./components/Avis/Avis";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Cookie from "./components/Cookie/Cookie";
+import MentionLegale from "./components/MentionsLegales/MentionLegale";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>
-      <Accueil />
-      <AllServices />
-      <A_propos />
-      <Avis />
-      <br />
-      <Contact />
-      <Footer />
-      <Cookie/>
+      <Router>
+        <Routes>
+          <Route path="/mentionlegales" element={<MentionLegale />} />
+
+          <Route
+            path="/"
+            element={
+              <div>
+                <Header />
+                <Accueil />
+                <AllServices />
+                <A_propos />
+                <Avis />
+                <Contact />
+                <Footer />
+                <Cookie />
+              </div>
+            }
+          />
+        </Routes>
+      </Router>
     </div>
   );
 }

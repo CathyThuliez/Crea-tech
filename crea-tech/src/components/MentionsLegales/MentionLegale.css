@@ -1,0 +1,11 @@
+.mentions-Legales {
+  background-image: url(../images/BG_ACCUEIL/15634900_5660676.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  padding: 50px;
+  text-align: justify;
+}
+
