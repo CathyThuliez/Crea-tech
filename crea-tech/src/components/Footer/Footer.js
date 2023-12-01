@@ -21,10 +21,7 @@ class Footer extends Component {
             >
               <p> Mention légales</p>
             </Link>
-
-            <a href="#">
               <p className="footer-copyright">Copyright</p>
-            </a>
           </div>
           <p className="footer-social-media">
             <a

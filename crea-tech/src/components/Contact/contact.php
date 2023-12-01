@@ -1,25 +1,33 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $firstname = $_POST["firstname"];
-    $email = $_POST["email"];
-    $select = $_POST["select"];
-    $message = $_POST["message"];
+    // Récupérer les données du formulaire
+    $nom = $_POST['name'];
+    $prenom = $_POST['firstname'];
+    $email = $_POST['email'];
+    $sujet = $_POST['select'];
+    $message = $_POST['message'];
 
-    $to = "corentin.orczyk@outlook.fr"; // Adresse e-mail de destination
-    $subject = "Nouveau message de " . $name . " " . $firstname;
-    $email_body = "Sujet : " . $select . "\n\n" . $message . "\n\nEmail de l'expéditeur : " . $email;
+    // Adresse e-mail de réception
+    $destinataire = "contact@crea-tech.fr";
 
-    $headers = "From: " . $email . "\r\n";
-    $headers .= "Reply-To: " . $email . "\r\n";
+    // Sujet de l'e-mail
+    $sujet_email = "Nouveau message de contact depuis le site";
 
-    if (mail($to, $subject, $email_body, $headers)) {
-        echo json_encode(array("message" => "E-mail envoyé avec succès !"));
+    // Corps du message
+    $contenu = "Nom: $nom\n";
+    $contenu .= "Prénom: $prenom\n";
+    $contenu .= "Email: $email\n";
+    $contenu .= "Sujet: $sujet\n";
+    $contenu .= "Message:\n$message";
+
+    // En-têtes de l'e-mail
+    $headers = "From: $email \r\n";
+    $headers .= "Reply-To: $email \r\n";
+
+    // Envoi de l'e-mail
+    if (mail($destinataire, $sujet_email, $contenu, $headers)) {
+        echo "Votre message a été envoyé avec succès.";
     } else {
-        http_response_code(500);
-        echo json_encode(array("message" => "Erreur lors de l'envoi de l'e-mail"));
+        echo "Une erreur s'est produite lors de l'envoi du message.";
     }
-} else {
-    http_response_code(405);
-    echo json_encode(array("message" => "Méthode non autorisée"));
 }

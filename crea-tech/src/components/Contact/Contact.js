@@ -1,25 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment , useState } from "react";
 import Info from "./Info";
 import "./Contact.css";
-import axios from "axios";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  
-    const form = e.target; // Obtenez l'élément form
-    const formData = new FormData(form); // Utilisez l'élément form pour créer FormData
-  
-    axios
-      .post("http://localhost:81/contact.php", formData)
-      .then((response) => {
-        console.log(response.data.message); // Vous pouvez traiter la réponse ici
-      })
-      .catch((error) => {
-        console.error("Erreur lors de l'envoi du formulaire : ", error);
-      });
-  };
   return (
     <Fragment>
       <section id="Contact" class="contact">
@@ -45,7 +28,6 @@ const Contact = () => {
           className="contact-form"
           action=""
           method="post"
-          onSubmit={handleSubmit}
         >
             <label className="form-label" htmlFor="name">
               Nom
@@ -56,7 +38,6 @@ const Contact = () => {
                 placeholder="Magination"
                 type="text"
                 required
-        
             />
             </label>
 
@@ -125,7 +106,7 @@ const Contact = () => {
               rows="5"
             />
           </label>
-          <button className="btn" type="submit" id="btn-contact" onSubmit={handleSubmit} >
+          <button className="btn" type="submit" id="btn-contact">
             <a href="#">
               <span>Envoyer la demande </span>
             </a>

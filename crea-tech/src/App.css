@@ -17,11 +17,11 @@
   h3,
   b {
     text-align: center;
-    color: #722375;
+    color: hsl(298, 54%, 30%);
   }
 
   .section-separator {
-    background-color: #722375;
+    background-color: rgb(115, 36, 117);
     height: 3px;
     width: 50%;
     margin: auto;
