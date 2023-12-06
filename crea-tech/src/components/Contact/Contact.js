@@ -26,7 +26,7 @@ const Contact = () => {
         <div className="form">
           <form
           className="contact-form"
-          action=""
+          action="http://localhost:8000/contact.php"
           method="post"
         >
             <label className="form-label" htmlFor="name">

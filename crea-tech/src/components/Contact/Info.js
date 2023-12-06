@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Mail from "../images/ICON_CONTACT/icons8-courrier-96.png";
 import Tel from "../images/ICON_CONTACT/icons8-tel-58.png";
 import "./Info.css";
 
-const Contact = ({ image, title, description }) => {
+const Contact = ({ image, title, texte, href, protocole }) => {
   return (
     <div
       className="contact-info">
@@ -11,7 +11,7 @@ const Contact = ({ image, title, description }) => {
         <img src={image} alt={title} className="logo-contact" />
       </div>
         <div className="contact-description">
-          <p>{description}</p>
+          <a href={protocole +':'+ href}>{texte}</a>
         </div>
     </div>
   );
@@ -21,12 +21,16 @@ const Contacts = () => {
   const contactData = [
     {
       image: Mail,
-      description: "contact@crea-tech.fr",
+      texte: "contact@crea-tech.fr",
+      href: "contact@crea-tech.fr",
+      protocole: "mailto",
     },
 
     {
       image: Tel,
-      description: "06 42 14 03 29",
+      texte: "06 42 14 03 29",
+      href: "0642140329",
+      protocole:"tel",
     },
   ];
 
@@ -39,7 +43,9 @@ const Contacts = () => {
               key={index}
               image={contact.image}
               title={contact.title}
-              description={contact.description}
+              texte={contact.texte}
+              href={contact.href}
+              protocole={contact.protocole}
             />
           ))}
         </div>

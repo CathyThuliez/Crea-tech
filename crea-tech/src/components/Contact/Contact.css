@@ -39,6 +39,7 @@ select {
 label {
   color: #722375;
   font-weight: bold;
+  display: inline-block;
 }
 
 #btn-contact {
