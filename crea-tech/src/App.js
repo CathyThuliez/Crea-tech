@@ -1,5 +1,5 @@
 import "./App.css";
-import A_propos from "./components/A_propos/A_propos";
+import APropos from "./components/APropos/APropos";
 import Accueil from "./components/Accueil/Accueil";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -24,7 +24,7 @@ function App() {
                 <Header />
                 <Accueil />
                 <AllServices />
-                <A_propos />
+                <APropos />
                 <Avis />
                 <Contact />
                 <Footer />
